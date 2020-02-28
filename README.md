@@ -1,2 +1,2 @@
 # WSOA3028A_1827655
-I am making changes boi 
+Read Me File for auxillary information about the website and its development
