@@ -2,7 +2,15 @@
 <html>
 
     <head>
+
+        <script defer src="JavaScript\index.js"> </script>
+
         <meta charset="UTF-8">
+        <meta name = "description" content = "Kent Wilson's Personal Training">
+        <meta name ="keywords" content = "Gym, Exercise, Training, Nutrition">
+        <meta name = "author" content = "1827655">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+       
         <title>
            Kent Wilson's Personal Training 
         </title>
@@ -10,60 +18,82 @@
 
     <body>
         <header>
-            <center>
-                <img src ="buffdude.jpg">
-            <h1>
+           
+                <img src ="Images\buffdude.jpg" alt ="Silhouette Of Muscular Man" marginleft = "auto" >
+            <h1 align = center>
                 Kent Wilson's Personal Training
             </h1>
-        </center>
+       
         </header>
 
         <article>
-            <center>
-            <h2>
+            
+            <h2 align = center>
                 Welcome to the first step towards a better you 
             </h2>
     
-            <p>
+            <p align="center">
+
+            <button id="transform">TRANSFORM YOURSELF!</button>
+
+            </p>
+
+            <section  id = "intro" style = "display:none" >
+            <p align = center>
                 Hi, my name is Kent Wilson, I am a 26 Year Old with a passion for fitness and nutrition.
-                </br>I have my BSc in Sports Science from the University of Pretoria and have spent many years in 
+            </br>I have my BSc in Sports Science from the University of Pretoria and have spent many years in 
             </br>the fitness industry transforming people's bodies and quality of life. This website serves as a platform for 
         </br>me to share my knowledge on fitness and nutrition whilst debunking common myths people have surrounding the fitness lifestyle. 
     </br>It also allows me to connect with people like you, who are looking to trasform themselves, and need someone to show them exactly 
 </br>how to reach them. So what are you waiting for? Head to the contact me page and let's start your journey to the best version of yourself. 
             </p>
           
-        </center>
+        
 
-            <nav>
-                <p> To read blog posts about the development of this Website click 
-                <a href = "blog.html">here</a> 
+            <nav align = center>
+
+                <p> To learn more about me click
+                    <a href = "aboutMeIntro.html">here</a> 
+                    </p>
+            
+                 <p> To read more interesting articles about advanced training techniques click
+                 <a href = "Training\trainingIntro.html">here</a> 
+                 </p>
+
+                <p>To learn more about dieting and nutrition click
+                <a href = "Nutrition\nutritionIntro.html">here</a>
                 </p>
 
-            <p> To read more interesting articles about advanced training techniques click
-                <a href = "training.html">here</a> 
-            </p>
+                <p> To get into contact with me to book a session or to ask questions click
+                <a href = "Contact\contactIntro.html">here</a>
+                </p>
 
-            <p>To learn more about dieting and nutrition click
-                <a href = "nutrition.html">here</a>
-            </p>
-
-            <p> To get into contact with me to book a session or to ask questions click
-                <a href = "contactme.html">here</a>
-             </p>
+                <p> To read blog posts about the development of this Website click 
+                    <a href = "Blogs\blogIntro.html">here</a> 
+                    </p>
             </nav>
 
 
-            <center>
-<h3> Website's Future Development</h3>
-<p> I want the colour scheme for the website to be monochromatic. Featuring black and white images and occasionally splashes of
+      
+
+<h3 align = "center"> Website's Future Development</h3>
+<p align = "center"> I want the colour scheme for the website to be monochromatic. Featuring black and white images and occasionally splashes of
 </br> blue that will be incorporated in the logo as well. As for the website's feel I would like to incorprate seemless transitions 
 </br>between pages and the pages themselves will be made up of screen wide blocks that fade in as you scroll down. The training and nutrition pages will have 
 </br>thumbnails, previews and links to other articles and the contact me page will have a form that potential clients can fill in. 
 
 </p>
-</center>
+
+</section>
 
         </article>
+
+
+<form>
+<input type="button" value="Back" onclick="history.back()">
+</form>
+
+
+
     </body>
 </html>
