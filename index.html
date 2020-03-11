@@ -14,16 +14,38 @@
         <title>
            Kent Wilson's Personal Training 
         </title>
+
+        <style>
+        
+            .center{
+                text-align: center;
+            }
+
+        </style>
+
     </head>
 
     <body>
         <header>
            
-                <img src ="Images\buffdude.jpg" alt ="Silhouette Of Muscular Man" marginleft = "auto" >
+                <img class = "img" src ="Images\buffdude.jpg" alt ="Silhouette Of Muscular Man">
             <h1 align = center>
                 Kent Wilson's Personal Training
             </h1>
-       
+
+          
+            
+                <nav class="center">
+
+                <a href = "aboutMe.html">ABOUT ME </a> &emsp;
+                <a href = "trainingIntro.html">TRAINING</a> &emsp;
+                <a href = "nutritionIntro.html">NUTRITION</a> &emsp;
+                <a href = "contactIntro.html">CONTACT ME</a> &emsp;
+                <a href = "blogIntro.html">BLOG POSTS</a> &emsp;
+
+                 </nav>
+                 <hr>
+   
         </header>
 
         <article>
@@ -32,11 +54,11 @@
                 Welcome to the first step towards a better you 
             </h2>
     
-            <p align="center">
-
-            <button id="transform">TRANSFORM YOURSELF!</button>
-
-            </p>
+           
+            <form class = "center">
+            <input id ="transform" type="button" value="TRANSFORM YOURSELF"> 
+            </form>
+           
 
             <section  id = "intro" style = "display:none" >
             <p align = center>
@@ -47,51 +69,16 @@
     </br>It also allows me to connect with people like you, who are looking to trasform themselves, and need someone to show them exactly 
 </br>how to reach them. So what are you waiting for? Head to the contact me page and let's start your journey to the best version of yourself. 
             </p>
-          
-        
-
-            <nav align = center>
-
-                <p> To learn more about me click
-                    <a href = "aboutMeIntro.html">here</a> 
-                    </p>
-            
-                 <p> To read more interesting articles about advanced training techniques click
-                 <a href = "Training\trainingIntro.html">here</a> 
-                 </p>
-
-                <p>To learn more about dieting and nutrition click
-                <a href = "Nutrition\nutritionIntro.html">here</a>
-                </p>
-
-                <p> To get into contact with me to book a session or to ask questions click
-                <a href = "Contact\contactIntro.html">here</a>
-                </p>
-
-                <p> To read blog posts about the development of this Website click 
-                    <a href = "Blogs\blogIntro.html">here</a> 
-                    </p>
-            </nav>
-
-
-      
-
-<h3 align = "center"> Website's Future Development</h3>
-<p align = "center"> I want the colour scheme for the website to be monochromatic. Featuring black and white images and occasionally splashes of
-</br> blue that will be incorporated in the logo as well. As for the website's feel I would like to incorprate seemless transitions 
-</br>between pages and the pages themselves will be made up of screen wide blocks that fade in as you scroll down. The training and nutrition pages will have 
-</br>thumbnails, previews and links to other articles and the contact me page will have a form that potential clients can fill in. 
-
-</p>
 
 </section>
 
         </article>
 
-
-<form>
-<input type="button" value="Back" onclick="history.back()">
-</form>
+        
+        <form class = "center">
+        <input type="button" value="Back" onclick="history.back()">
+        </form>
+        
 
 
 
