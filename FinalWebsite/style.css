@@ -85,6 +85,12 @@ header .navbar ul li a:hover::before{
     left:0px;
 }
 
+header .navbar ul li a.active::before{
+    width:100%; 
+    left:0px; 
+}
+
+
 .home{
     min-height: 100vh;
     background-image: url("first.jpg");
@@ -153,3 +159,119 @@ header .navbar ul li a:hover::before{
     background-color: white;
     color:black; 
 }
+
+
+.about-me{
+    padding: 50px 15px; 
+}
+
+.about-me .title{
+    background-color: rgb(255, 255, 255);
+    flex: 0 0 100%; 
+    max-width: 100%; 
+    margin-bottom: 40px; 
+    padding-left: 5%;
+}
+
+.about-me .title h1{
+    display:inline-block; 
+    font-size:35px; 
+    text-transform: uppercase;
+    font-weight: 700; 
+    color: black;
+    margin:0px 0px 10px; 
+    position: relative;
+    
+}
+
+.about-me .title h1:before{
+    content:''; 
+    left:0; 
+    position: absolute;
+    height:2px; 
+    right:30%; 
+    background-color: dodgerblue;
+    bottom: 0px; 
+}
+
+.text-uppercase{
+    text-transform: uppercase!important;
+}
+
+.about-me .title p.small{
+    display:block; 
+    font-size: 14px; 
+    color: gray;
+    font-weight: 400; 
+    letter-spacing: 2px;
+}
+
+.about-me .content{
+
+}
+
+.about-me .content .img{
+    flex: 0 0 50%; 
+    max-width: 50%;
+    float:left;
+
+}
+
+.about-me .content .img img{
+width: 100%; 
+display: block; 
+padding-left: 10%;
+padding-bottom: 20%;
+}
+
+.about-me .content .allText{
+padding-left: 55%;
+}
+
+.about-me .content .allText h4{
+font-size:40px; 
+font-weight: 600; 
+margin: 0 0 5px; 
+color: black; 
+
+}
+
+.about-me .content .allText h6{
+    font-size: 24px; 
+    font-weight: 500; 
+    margin: 0 0 15px; 
+    color: black; 
+}
+
+.about-me .content .allText h6 span{
+    color:dodgerblue;
+}
+
+.about-me .content .allText p{
+    font-size: 15px;
+    font-weight: 400; 
+    line-height:24px; 
+    color: gray; 
+}
+
+.about-me .content .allText button{
+    border-radius:4px; 
+    color:black;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid black;  
+    padding: 12px 25px; 
+    text-decoration: none;
+    display: inline-block; 
+    font-size: 14px; 
+    text-transform: uppercase; 
+    transition: all 0.5s ease;
+    font-weight: 600; 
+}
+
+.about-me .content .allText button:hover{
+    background-color:black; 
+    color:white; 
+    margin-top: 25px;;
+}
+
