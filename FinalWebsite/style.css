@@ -5,6 +5,7 @@
 body{
     margin: 0 ; 
     font-family: 'Poppins', sans-serif;
+    
 }
 
 *{
@@ -286,6 +287,45 @@ background-color: white;
 .about-me .content .text .social-links a .fa:hover{
     color: black; 
 }
+
+
+.contact-us{
+    padding: 50px 100px; 
+    background-color: blanchedalmond;
+}
+
+.contact-us h1{
+   padding-left:45%;
+   padding-bottom: 5%; 
+}
+
+.contact-us .form{
+background-color: white;
+flex: 0 0 100%;
+max-width: 100%; 
+padding: 40px; 
+border: 1px solid grey; 
+}
+
+
+.contact-us .form h2{
+    font-size:25px; 
+    font-weight: 600;
+    color: black; 
+    margin:0 ;
+    padding:0 ; 
+
+}
+
+.contact-us .form p{
+    font-size: 15px; 
+    font-weight:400; 
+    color: grey; 
+    line-height:24px; 
+    margin:0px; 
+}
+
+
 
 footer{
     width: 100%;
