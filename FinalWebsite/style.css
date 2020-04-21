@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
 
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 body{
     margin: 0 ; 
@@ -163,6 +164,7 @@ header .navbar ul li a.active::before{
 
 .about-me{
     padding: 50px 15px; 
+    margin-bottom: 10%;
 }
 
 .about-me .title{
@@ -224,11 +226,12 @@ padding-left: 10%;
 padding-bottom: 20%;
 }
 
-.about-me .content .allText{
+.about-me .content .text{
 padding-left: 55%;
+padding-top: 2.5%;
 }
 
-.about-me .content .allText h4{
+.about-me .content .text h4{
 font-size:40px; 
 font-weight: 600; 
 margin: 0 0 5px; 
@@ -236,42 +239,92 @@ color: black;
 
 }
 
-.about-me .content .allText h6{
+.about-me .content .text h6{
     font-size: 24px; 
     font-weight: 500; 
     margin: 0 0 15px; 
     color: black; 
 }
 
-.about-me .content .allText h6 span{
+.about-me .content .text h6 span{
     color:dodgerblue;
 }
 
-.about-me .content .allText p{
+.about-me .content .text p{
     font-size: 15px;
     font-weight: 400; 
     line-height:24px; 
     color: gray; 
 }
 
-.about-me .content .allText button{
-    border-radius:4px; 
-    color:black;
-    font-family: inherit;
-    background-color: transparent;
-    border: 1px solid black;  
-    padding: 12px 25px; 
-    text-decoration: none;
-    display: inline-block; 
-    font-size: 14px; 
-    text-transform: uppercase; 
-    transition: all 0.5s ease;
-    font-weight: 600; 
+.about-me .content .text .social-links{
+    padding-top: 5%; 
 }
 
-.about-me .content .allText button:hover{
-    background-color:black; 
-    color:white; 
-    margin-top: 25px;;
+.about-me .content .text .social-links a{
+    height:50px; 
+    width: 50px; 
+    background-color: black;
+    border-radius:5px;
+    display:inline-block; 
+    border: 1px solid black; 
+    line-height: 55px;
+    text-align: center;
+    margin:0 2px; 
+    transition: all 0.5s ease; 
 }
+
+.about-me .content .text .social-links a:hover{
+background-color: white;
+}
+
+.about-me .content .text .social-links a .fa{
+    color: white; 
+    font-size: 25px; 
+}
+
+.about-me .content .text .social-links a .fa:hover{
+    color: black; 
+}
+
+footer{
+    width: 100%;
+    height: 50%;
+    background: black;
+    position: relative;
+    padding: 50pt;
+    
+}
+
+footer .logo{
+    flex: 0 0 100%;
+    max-width: 100%; 
+    text-align: center; 
+    font-size: 45px; 
+    color: white; 
+    font-weight: 900;
+}
+
+footer .social{
+    flex: 0 0 100%; 
+    max-width: 100%; 
+    text-align: center; 
+}
+
+footer .social a{
+    color:grey; 
+    text-decoration: none; 
+    display: inline-block; 
+    margin: 0px 12px; 
+    transition: all 0.5s ease; 
+    text-decoration:none;
+}
+
+footer .social a:hover{
+color:white; 
+}
+
+
+
+
 
