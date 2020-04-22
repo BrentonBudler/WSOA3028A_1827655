@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="unstyled.css">
     <meta charset="UTF-8">
@@ -9,44 +10,45 @@
 </head>
 <body>
 
-    <!--Header Section Start-->
-<header class = "container">
-
-    <h1 class = "brand-name"> kent wilson</h1>
-    <nav class = "navbar"> 
-        <ul>
-           <li><a href="index.html" >Home</a></li>
-           <li><a href="TrainingPage.html">Training</a></li>
-           <li><a href="NutritionPage.html">Nutrition</a></li>
-           <li><a href="blogPage.html" >Blogs</a></li>
-           <li><a href="ContactPage.html" class = "active">Contact Me</a></li>
-           <Cont>
-
-        </ul>
-    </nav>
-</header>
-<!--Header Section End-->
+    <section w3-include-html="header.html"></section>
 
 <h1 class= "heading">Wire Frame for Contact Me Page</h1>
 
 <img class = "img" src ="Images\ContactMe.png" alt ="WireFrame for Contact Me Page" width="1200" height="1300">
 
-<!--Footer Section Start-->
-<footer>
-    <figure class = "logo">
-    Kent Wilson
-    </figure>
-    
-    <section class= "social">
-        <a href=""><i class="fa fa-facebook"></i></a>
-        <a href=""><i class="fa fa-twitter"></i></a>
-        <a href=""><i class="fa fa-instagram"></i></a>
-        <a href=""><i class="fa fa-linkedin"></i></a>
+
+<!--Contact Us Section Start-->
+<section class = "contact-me"> 
+
+    <h1>Get In Touch</h1>
+  
+    <section class="form">
+      <h2>Contact Me</h2>  
+      <p>I am here to answer any questions you may have</p>
+  
+      <section class= "input">
+      <input class="box" type="text" name="" placeholder= "Name">
+      <input class="box" type="text" name="" placeholder= "Age">
+      <input class="box" type="text" name="" placeholder= "Goal">
+      <input class="box" type="text" name="" placeholder= "Email">
+      <textarea class= "form-control" placeholder="Details"></textarea>
+      </section>   
+  
+      <button>Get in touch</button>
+  
+  
     </section>
-    
-    
-    </footer>
-    <!--Footer Section End-->
-    
+      
+  
+  
+  </section>
+  <!--Contact Us Section End-->
+
+<section w3-include-html="footer.html"></section>
+
+    <script>
+        includeHTML();
+    </script>
+
 </body>
 </html>

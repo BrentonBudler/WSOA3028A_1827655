@@ -289,17 +289,17 @@ background-color: white;
 }
 
 
-.contact-us{
+.contact-me{
     padding: 50px 100px; 
     background-color: blanchedalmond;
 }
 
-.contact-us h1{
+.contact-me h1{
    padding-left:45%;
    padding-bottom: 5%; 
 }
 
-.contact-us .form{
+.contact-me .form{
 background-color: white;
 flex: 0 0 100%;
 max-width: 100%; 
@@ -308,7 +308,7 @@ border: 1px solid grey;
 }
 
 
-.contact-us .form h2{
+.contact-me .form h2{
     font-size:25px; 
     font-weight: 600;
     color: black; 
@@ -317,7 +317,7 @@ border: 1px solid grey;
 
 }
 
-.contact-us .form p{
+.contact-mw .form p{
     font-size: 15px; 
     font-weight:400; 
     color: grey; 

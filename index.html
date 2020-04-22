@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +9,8 @@
 </head>
 <body>
 
-<!--Header Section Start-->
-<header class = "container">
+ <section w3-include-html="header.html"></section>
 
-    <h1 class = "brand-name"> kent wilson</h1>
-    <nav class = "navbar"> 
-        <ul>
-            <li><a href="index.html" class = "active" >Home</a></li>
-            <li><a href="TrainingPage.html">Training</a></li>
-            <li><a href="NutritionPage.html">Nutrition</a></li>
-            <li><a href="blogPage.html" >Blogs</a></li>
-            <li><a href="ContactPage.html">Contact Me</a></li>
-           <Cont>
-
-        </ul>
-    </nav>
-</header>
-<!--Header Section End-->
 
 <!--Home Page Section Start-->
 <main class= "home">
@@ -74,48 +60,12 @@
 <!--About Page Section End-->
 
 
-<!--Contact Us Section Start-->
-<section class = "contact-us"> 
-
-  <h1>Get In Touch</h1>
-
-  <section class="form">
-    <h2>Drop Us a line</h2>  
-    <p>We are here to answer any questions you may have</p>
-
-    <section class= "input">
-    <input class="box" type="text" name="" placeholder= "Name">
-    <input class="box" type="text" name="" placeholder= "Email">
-    <textarea class= "form-control" placeholder="Your Comment"></textarea>
-    </section>   
-
-    <button>Get in touch</button>
+<section w3-include-html="footer.html"></section>
 
 
-  </section>
-    
-
-
-</section>
-<!--Contact Us Section End-->
-
-
-<!--Footer Section Start-->
-<footer>
-<figure class = "logo">
-Kent Wilson
-</figure>
-
-<section class= "social">
-    <a href=""><i class="fa fa-facebook"></i></a>
-    <a href=""><i class="fa fa-twitter"></i></a>
-    <a href=""><i class="fa fa-instagram"></i></a>
-    <a href=""><i class="fa fa-linkedin"></i></a>
-</section>
-
-
-</footer>
-<!--Footer Section End-->
+<script>
+ includeHTML();
+</script>
     
 </body>
 </html>

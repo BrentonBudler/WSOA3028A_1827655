@@ -3,10 +3,19 @@ body{
     color:white; 
 }
 
+
+
 .center{
         text-align: center;
         align-content: center;
     }
+
+p{
+        margin-left:auto;
+        margin-right:auto; 
+        width:50%; 
+        padding-bottom: 1%;;
+}
 
 .img{
     display: block;
