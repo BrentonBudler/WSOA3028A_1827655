@@ -30,3 +30,8 @@ p{
     padding-top:5%;
     padding-bottom:1%;
 }
+
+.top{
+    background-color: red;
+    display:none; 
+}
