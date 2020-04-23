@@ -1,3 +1,4 @@
+//Code to include external html files 
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
   z = document.getElementsByTagName("*");
@@ -21,6 +22,7 @@ function includeHTML() {
   }
 }
 
+//Code to display back to top button and give it the functionality of scrolling to the top 
 mybutton = document.getElementById("topButton");
 window.onscroll = function() {scrollFunction()};
 
