@@ -288,6 +288,35 @@ background-color: white;
     color: black; 
 }
 
+.triangle1{
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 20px solid white;
+
+    position:absolute;
+    bottom:8px;
+    left:100%;
+    margin-left: -50%;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
 
 .contact-me{
     padding: 50px 100px; 
