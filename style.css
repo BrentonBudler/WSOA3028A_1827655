@@ -20,6 +20,18 @@ body{
     flex-wrap: wrap; 
 }
 
+.text-center{
+    text-align: center!important;
+}
+
+.text-right{
+    text-align: right!important;
+}
+
+.text-left{
+    text-align: left!important;
+}
+
 header{
     position: absolute; 
     left: 0px; 
@@ -197,6 +209,7 @@ header .navbar ul li a.active::before{
     bottom: 0px; 
 }
 
+
 .text-uppercase{
     text-transform: uppercase!important;
 }
@@ -288,6 +301,201 @@ background-color: white;
     color: black; 
 }
 
+
+
+.title1{
+    flex: 0 0 100%; 
+    max-width: 100%; 
+    margin-bottom: 40px; 
+}
+
+.title1 h1{
+    display:inline-block; 
+    font-size:35px; 
+    text-transform: uppercase;
+    font-weight: 700; 
+    color: white;
+    margin:0px 0px 10px; 
+    position: relative;
+    
+}
+
+.title1 h1:before{
+    content:''; 
+    height:2px; 
+    background-color: dodgerblue;
+    position: absolute;
+    bottom: 0px;
+    width: 100px;
+    left:0; 
+    right:0; 
+    margin:auto;
+}
+
+.services{
+    background-color:black;
+    padding: 100px 0px 70px;
+}  
+
+.services .service-content{
+    flex: 0 0 100%; 
+    max-width: 100%;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+.services .service-content .box{
+    background-color: white;
+    padding: 30px; 
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    margin-bottom: 30px;
+    border: 1px solid black;
+    text-align: center;
+    position: relative;'
+    border-radius: 5px;
+}
+
+
+.services .service-content .box::before{
+    content:'';
+    height:2px; 
+    background-color: dodgerblue;
+    position: absolute;
+    bottom: 0px;
+    width: 50px;
+    left:0; 
+    right:0; 
+    margin:auto;
+    transition: all .5s ease;
+}
+
+.services .service-content .box:hover::before{
+    width:100%
+}
+
+.services .service-content .box .icon{
+    height: 60px; 
+    width: 60px; 
+    background-color: dodgerblue;
+    margin: 15px auto 20px; 
+    border-radius: 50%; 
+    text-align: center;
+    
+}
+
+.services .service-content .box .icon .fa{
+    font-size: 25px; 
+    color: white; 
+    line-height: 60px;
+}
+
+.services .service-content .box h5{
+    font-size: 16px; 
+    font-weight: 600; 
+    color: black;
+    margin: 0 ;
+}
+
+.services .service-content .box p{
+    font-size: 15px;
+    font-weight: 400; 
+    line-height:24px; 
+    color: gray; 
+    margin: 10px 0 15px;
+}
+
+
+.test{
+    padding: 80px 15px; 
+}
+
+.test .title1 h1{
+    color:black!important ;
+}
+
+.test .content{
+    display: flex; 
+    
+
+}
+
+.test .content .box{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 15px; 
+}
+
+.test .content .box .overlay{
+    opacity: 0;
+    transition: .5s ease;
+    background-color:black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -51%);
+    width: 100%;
+    height: 99%;
+   
+}
+
+.test .content .box:hover .overlay{
+    opacity:1 ;
+    
+}
+
+.test .content .box .inner{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.test .content .box .inner .img img{
+    width:100%;
+    height: 100%;
+}
+
+.test .content .box .inner .text{
+    padding: 100px 30px;
+    text-align: center; 
+    
+}
+
+.test .content .box .inner .text h4{
+    font-size:20px;
+    margin:0;
+    padding: 0 0 15px; 
+    font-weight: 500;
+    color:white;
+    text-transform: capitalize;
+    
+}
+
+.test .content .box .inner .text p{
+    font-size: 15px; 
+    line-height: 20px; 
+    color: grey; 
+    margin:0;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .triangle1{
 	width: 0;
 	height: 0;
@@ -346,7 +554,7 @@ border: 1px solid grey;
 
 }
 
-.contact-mw .form p{
+.contact-me .form p{
     font-size: 15px; 
     font-weight:400; 
     color: grey; 
