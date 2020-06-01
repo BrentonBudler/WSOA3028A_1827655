@@ -483,6 +483,8 @@ background-color: white;
     display: flex; 
     flex-wrap: wrap; 
     justify-content: space-between;
+
+
 }
 
 .services .service-content .box{
@@ -493,7 +495,7 @@ background-color: white;
     margin-bottom: 30px;
     border: 1px solid black;
     text-align: center;
-    position: relative;'
+    position: relative;
     border-radius: 5px;
 }
 
@@ -547,11 +549,16 @@ background-color: white;
 }
 
 @media(max-width: 750px){
+    .services .service-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .services .service-content .box{
         background-color: white;
         padding: 30px; 
         flex: 0 0 100%;
-        max-width: 100%; 
+        max-width: 75%; 
 
     }
 }
