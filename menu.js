@@ -8,6 +8,16 @@ const menuItems = [
     {title: 'Contact Me', link: '/WSOA3028A_1827655/ContactPage.html'}
 ]
 
+
+const socialLinks = [
+    {href:"1", class:"fa fa-facebook"},
+    {href:"2", class:"fa fa-twitter"},
+    {href:"3", class:"fa fa-instagram"}
+    // {href:"4", class:"fa fa-linkedin"}
+]
+
+
+
 const initializeMenu = () => {
 
     const header = document.querySelector('header');
@@ -33,7 +43,43 @@ const initializeMenu = () => {
 
     nav.appendChild(ul);
     header.appendChild(nav);
+
+    const div = document.createElement('div');
+    div.className = "ham-burger";
+
+    const i = document.createElement('i');
+    i.className= "fa fa-bars";
+
+    div.appendChild(i);
+    header.appendChild(div);
 }; 
 
 
+
+const initializeFooter = () => {
+
+    const footer = document.querySelector('footer');
+    const fig = document.createElement('figure');
+    fig.className = "logo";
+    fig.innerText = "Kent Wilson";
+    footer.appendChild(fig);
+
+    const sect = document.createElement('section');
+    sect.className="social";
+
+    for(let social of socialLinks){
+        const a= document.createElement('a');
+        const i = document.createElement('i');
+
+        a.href = social.href; 
+        i.className = social.class; 
+        a.appendChild(i);
+        sect.appendChild(a);
+    }
+
+    footer.appendChild(sect);
+};
+
+
 document.addEventListener('DOMContentLoaded',()=> initializeMenu());
+document.addEventListener('DOMContentLoaded',()=> initializeFooter());

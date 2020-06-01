@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <script src="script.js"></script>
+    <script type = "module" src="menu.js"></script>
+    <script src="bloglink.js" async></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="unstyled.css">
-    <script src="script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name = "description" content = "A blog post page with previews and links to various blog posts">
@@ -14,14 +14,119 @@
 </head>
 <body>
     
-    <section w3-include-html="header.html"></section>
-
-<h1 class= "heading">Wire Frame for Blog Posts Page</h1>
-
-<img class = "img" src ="Images\BlogPosts.png" alt ="WireFrame for Blog Posts Page" width="1200" height="1300">
+<header></header>
 
 
 
+    <!--Start Services-->
+    <section class = "services">
+        <div class = "container">
+            
+                <div class = "title1 text-center">
+                    <h1> Development Blogs</h1>
+                </div>
+        
+
+            <div class = "row">
+                <div class = "service-content">
+                        <div class = "box impressions" >
+                            <div class = "icon">
+                                <i class = "fa fa-globe"></i>
+                            </div>
+                            <h5>The Internet: First Impressions</h5>
+                            <p>A reflection on several historical readings and a brief 
+                                description of the character the website will be
+                                developed for.
+                            </p>
+                        </div>
+
+                        <div class = "box weaving">
+                            <div class = "icon">
+                                <i class = "fa fa-bug"></i>
+                            </div>
+                            <h5>Weaving the Web</h5>
+                            <p>An important document that changed the history of the internet,
+                                The Pros and Cons of Human Generated Content,
+                                Changing Technologies and Internet Cultures and 
+                                URL Structures
+                            </p>
+                        </div>
+
+                        <div class = "box technology">
+                            <div class = "icon">
+                                <i class = "fa fa-cogs"></i>
+                            </div>
+                            <h5>Technologies behing the WWW</h5>
+                            <p>Semantic Markup - what is is and why it is necessary.
+                                What is a browser and how do they work?
+                                What are URLs? 
+                                A reflection on 'The Medium is the Message'.
+                                A reflection on 'What Hypertext is.'
+                            </p>
+                        </div>
+
+                        <div class = "box one">
+                            <div class = "icon">
+                                <i class = "fa fa-universal-access"></i>
+                            </div>
+                            <h5>One Web for us All</h5>
+                            <p>The uses of metdata,
+                                The history of web Robots.
+                                The importance of accessibility, 
+                                Accessibility Tools and
+                                How does the Medium is the Message impact our understanding
+                                of the web?
+                            </p>
+                        </div>
+
+                        <div class = "box interactivity">
+                            <div class = "icon">
+                                <i class = "fa fa-hand-pointer-o"></i>
+                            </div>
+                            <h5>Interactivity</h5>
+                            <p>What interactivity means on the world wide web.
+                                Events and interactivtiy. Hypertext, navigation an
+                                structure. A reflection on the metaphors we use 
+                                to understand digital information. 
+
+                            </p>
+                        </div>
+
+                        <div class = "box online">
+                            <div class = "icon">
+                                <i class = "fa fa-graduation-cap"></i>
+                            </div>
+                            <h5>Online Learning</h5>
+                            <p>Suggested technologies. Accessibility implications. 
+                                Ethical implications. International precedent
+                                and challenges they represent in South Africa. 
+                            </p>
+                        </div>
+
+                        <div class = "box info">
+                            <div class = "icon">
+                                <i class = "fa fa-map-marker"></i>
+                            </div>
+                            <h5>Information Geographies</h5>
+                            <p>Pre-digital geographies of information.   
+                                Changing geographies after the information revolution.
+                                Geography of Access and Enablement.
+                                Geography of participation.
+                                Geographies of representation.
+                            </p>
+                        </div>
+
+                        
+
+
+                    </div>
+            </div>
+        </div>
+    </section>
+    <!--End Services-->
+
+
+<!-- 
 <article class = "center">
 
     <h1 class= "heading">Blog Posts and Links</h1>
@@ -101,15 +206,13 @@
         
         <button onclick="topFunction()" id="topButton" class = "blogBut">Back To Top</button>
 
-</article>
+</article> -->
 
 
 
-<section w3-include-html="footer.html"></section>
 
-    <script>
-        includeHTML();
-    </script>
 
+<script src = "burger.js" async></script>
+<!-- <footer></footer> -->
 </body>
 </html>

@@ -1,27 +1,3 @@
-//Code to include external html files 
-function includeHTML() {
-  var z, i, elmnt, file, xhttp;
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    file = elmnt.getAttribute("w3-include-html");
-    if (file) {
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          elmnt.removeAttribute("w3-include-html");
-          includeHTML();
-        }
-      }
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      return;
-    }
-  }
-}
-
 //Code to display back to top button and give it the functionality of scrolling to the top 
 mybutton = document.getElementById("topButton");
 window.onscroll = function() {scrollFunction()};
@@ -37,4 +13,25 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+}
+
+//CLIENT TESTIMONIALS
+const slides = document.querySelector(".slider").children; 
+const indicatorImages = document.querySelector(".slider-indicator").children;
+
+
+for (let i = 0; i < indicatorImages.length; i++) {
+  indicatorImages[i].addEventListener("click", function(){
+   // console.log(this.getAttribute("data-id"))
+    for(let j=0; j<indicatorImages.length;j++){
+      indicatorImages[j].classList.remove("active");
+    }
+    this.classList.add("active");
+    const id= this.getAttribute("data-id"); 
+    for(let z=0; z<slides.length-1;z++){
+      slides[z].classList.remove("active");
+    }
+    slides[id].classList.add("active");
+  })
+  
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="script.js"></script>
+    <script type =  module src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <script type = "module" src="menu.js"></script>
     <meta charset="UTF-8">
@@ -12,272 +12,241 @@
     <title>Home Page</title>
 </head>
 <header></header>
+
 <body>
 
-<!--<section w3-include-html="header.html"></section>--> 
+
+    
+    <!--Home Page Section Start-->
+    <main class= "home">
+        <section class="content">
+            <h6>Are You Ready To</h6>
+            <h1>Transform?</h1>
+            <h3>Let's Do This, Together</h3>
+            <button onclick="window.location.href='ContactPage.html'">I'm Ready</button>
+            <div class="triangle1 bounce"></div>
+            
+            
+        </section>
+    </main>
+    <!--Home Page Section End-->
 
 
-<!--Home Page Section Start-->
-<main class= "home">
-    <section class="content">
-        <h6>Are You Ready To</h6>
-        <h1>Transform?</h1>
-        <h3>Let's Do This, Together</h3>
-        <button onclick="window.location.href='ContactPage.html'">I'm Ready</button>
-        <div class="triangle1 bounce"></div>
+
+    <!--About Page Section Start-->
+    <section class = "about-me">
+
+        <div class = "title">
+        <h1>About Me</h1> 
+        <p class = "small text-uppercase">Information about me</p>
+        </div>  
         
+        <div class ="content">
+            <figure class="img">
+                <img src="Images\Kent.jpg" alt= "Image of Kent Wilson"/>
+            </figure>
+
         
+            <div class="text">
+                <h4>I'm Kent Wilson</h4>
+                <h6>A<span> Personal Trainer & Nutrition Specialist</span> based in <span>Johannesburg, South Africa</span></h6>
+                <p>I have my BSc in Sports Science from the University of Pretoria and have spent many years in 
+                the fitness industry transforming people's bodies and quality of life. This website serves as a platform for 
+                me to share my knowledge on fitness and nutrition and to connect with people like you, who are looking to trasform themselves, and need someone to show them exactly 
+                how to do it.         
+
+                <div class = "social-links">
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
     </section>
-</main>
-<!--Home Page Section End-->
+    <!--About Page Section End-->
 
+    <main class = "test">
 
-
-<!--About Page Section Start-->
-<section class = "about-me">
-
-    <div class = "title">
-      <h1>About Me</h1> 
-      <p class = "small text-uppercase">Information about me</p>
-    </div>  
-    
-    <div class ="content">
-        <figure class="img">
-            <img src="Images\Kent.jpg" alt= "Image of Kent Wilson"/>
-        </figure>
-
-    
-        <div class="text">
-            <h4>I'm Kent Wilson</h4>
-            <h6>A<span> Personal Trainer & Nutrition Specialist</span> based in <span>Johannesburg, South Africa</span></h6>
-            <p>I have my BSc in Sports Science from the University of Pretoria and have spent many years in 
-            the fitness industry transforming people's bodies and quality of life. This website serves as a platform for 
-            me to share my knowledge on fitness and nutrition and to connect with people like you, who are looking to trasform themselves, and need someone to show them exactly 
-            how to do it.         
-
-            <div class = "social-links">
-            <a href=""><i class="fa fa-facebook"></i></a>
-            <a href=""><i class="fa fa-twitter"></i></a>
-            <a href=""><i class="fa fa-instagram"></i></a>
-            <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
+        <div class = "title1 text-center">
+            <h1> Training Services</h1>
         </div>
-    </div>
-
-</section>
-<!--About Page Section End-->
-
-<!--Start Services-->
-<section class = "services">
-    <div class = "container">
-        
-            <div class = "title1 text-center">
-                <h1> My Services</h1>
-            </div>
-       
-
-        <div class = "row">
-            <div class = "service-content">
-                    <div class = "box">
-                        <div class = "icon">
-                            <i class = "fa fa-columns"></i>
+    
+        <div class = "container">
+            <div class = content>
+                <div class= "box">
+                    <div class="inner">
+                        <div class = "img">
+                            <img src="Images\Strength.jpg" alt="Images\workout1">
                         </div>
-                        <h5>Strength</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Ratione alias eos nihil expedita, aliquam enim similique. 
-                            Non in quod, officia modi ullam temporibus</p>
+    
+                        <div class = "overlay">
+                            <div class="text ">
+                                <h4>Strength Training</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, quo quae vel saepe,
+                                    eaque, architecto doloremque deleniti tenetur veniam totam aspernatur nisi. 
+                                    Possimus nobis fugit repudiandae cupiditate assumenda praesentium optio?</p>
+                            </div>
+                        </div> 
                     </div>
-
-                    <div class = "box">
-                        <div class = "icon">
-                            <i class = "fa fa-columns"></i>
-                        </div>
-                        <h5>General Fitness</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Ratione alias eos nihil expedita, aliquam enim similique. 
-                            Non in quod, officia modi ullam temporibus</p>
-                    </div>
-
-                    <div class = "box">
-                        <div class = "icon">
-                            <i class = "fa fa-columns"></i>
-                        </div>
-                        <h5>Functional Training</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Ratione alias eos nihil expedita, aliquam enim similique. 
-                            Non in quod, officia modi ullam temporibus</p>
-                    </div>
-
-                    <div class = "box">
-                        <div class = "icon">
-                            <i class = "fa fa-columns"></i>
-                        </div>
-                        <h5>Weight Loss</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Ratione alias eos nihil expedita, aliquam enim similique. 
-                            Non in quod, officia modi ullam temporibus</p>
-                    </div>
-
-                    <div class = "box">
-                        <div class = "icon">
-                            <i class = "fa fa-columns"></i>
-                        </div>
-                        <h5>Contest Prep</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Ratione alias eos nihil expedita, aliquam enim similique. 
-                            Non in quod, officia modi ullam temporibus</p>
-                    </div>
-
-                    <div class = "box">
-                        <div class = "icon">
-                            <i class = "fa fa-columns"></i>
-                        </div>
-                        <h5>Muscle Development</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Ratione alias eos nihil expedita, aliquam enim similique. 
-                            Non in quod, officia modi ullam temporibus</p>
-                    </div>
-
-                    
-
-
                 </div>
-        </div>
-    </div>
-</section>
-<!--End Services-->
-
-
-<!--Start testimonials-->
-<section class = "test">
-
-    <div class = "title1 text-center">
-        <h1> My Services</h1>
-    </div>
-
-    <div class = "container">
-        <div class = content>
-            <div class= "box">
-                <div class="inner">
-                    <div class = "img">
-                        <img src="Images\Strength.jpg" alt="Images\workout1">
-                    </div>
-
-                    <div class = "overlay">
-                        <div class="text ">
-                            <h4>Strength Training</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, quo quae vel saepe,
+    
+                <div class= "box">
+                    <div class="inner">
+                        <div class = "img">
+                            <img src="Images\GeneralFitness.jpg" alt="workout2">
+                        </div>
+    
+                        <div class = "overlay">
+                            <div class="text">
+                                <h4>General Fitness</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, quo quae vel saepe,
                                 eaque, architecto doloremque deleniti tenetur veniam totam aspernatur nisi. 
                                 Possimus nobis fugit repudiandae cupiditate assumenda praesentium optio?</p>
-                        </div>
-                    </div> 
-                </div>
-            </div>
-
-            <div class= "box">
-                <div class="inner">
-                    <div class = "img">
-                        <img src="Images\GeneralFitness.jpg" alt="workout2">
-                    </div>
-
-                    <div class = "overlay">
-                        <div class="text">
-                            <h4>General Fitness</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, quo quae vel saepe,
-                             eaque, architecto doloremque deleniti tenetur veniam totam aspernatur nisi. 
-                             Possimus nobis fugit repudiandae cupiditate assumenda praesentium optio?</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class = "container">
-        <div class = content>
-            <div class= "box">
-                <div class="inner">
-                    <div class = "img">
-                        <img src="Images\Functional.jpg" alt="Images\workout1">
-                    </div>
-
-                    <div class = "overlay">
-                        <div class="text ">
-                            <h4>Functional Training</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, quo quae vel saepe,
-                                eaque, architecto doloremque deleniti tenetur veniam totam aspernatur nisi. 
-                                Possimus nobis fugit repudiandae cupiditate assumenda praesentium optio?</p>
-                        </div>
-                    </div> 
-                </div>
-            </div>
-
-            <div class= "box">
-                <div class="inner">
-                    <div class = "img">
-                        <img src="Images\WeightLoss.jpg" alt="workout2">
-                    </div>
-
-                    <div class = "overlay">
-                        <div class="text">
-                            <h4>Weight Loss</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, quo quae vel saepe,
-                             eaque, architecto doloremque deleniti tenetur veniam totam aspernatur nisi. 
-                             Possimus nobis fugit repudiandae cupiditate assumenda praesentium optio?</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class = "container">
-        <div class = content>
-            <div class= "box">
-                <div class="inner">
-                    <div class = "img">
-                        <img src="Images\ContestPrep.jpg" alt="Images\workout1">
-                    </div>
-
-                    <div class = "overlay">
-                        <div class="text ">
-                            <h4>Contest Prep</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, quo quae vel saepe,
-                                eaque, architecto doloremque deleniti tenetur veniam totam aspernatur nisi. 
-                                Possimus nobis fugit repudiandae cupiditate assumenda praesentium optio?</p>
-                        </div>
-                    </div> 
-                </div>
-            </div>
-
-            <div class= "box">
-                <div class="inner">
-                    <div class = "img">
-                        <img src="Images\MuscularDevelopment.jpg" alt="workout2">
-                    </div>
-
-                    <div class = "overlay">
-                        <div class="text">
-                            <h4>Muscle Development</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, quo quae vel saepe,
-                             eaque, architecto doloremque deleniti tenetur veniam totam aspernatur nisi. 
-                             Possimus nobis fugit repudiandae cupiditate assumenda praesentium optio?</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</section>
-<!--End testimonials-->
-
-<section w3-include-html="footer.html"></section>
-
-
-<script>
- includeHTML();
-</script>
     
+        <div class = "container">
+            <div class = content>
+                <div class= "box">
+                    <div class="inner">
+                        <div class = "img">
+                            <img src="Images\Functional.jpg" alt="Images\workout1">
+                        </div>
+    
+                        <div class = "overlay">
+                            <div class="text ">
+                                <h4>Functional Training</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, quo quae vel saepe,
+                                    eaque, architecto doloremque deleniti tenetur veniam totam aspernatur nisi. 
+                                    Possimus nobis fugit repudiandae cupiditate assumenda praesentium optio?</p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+    
+                <div class= "box">
+                    <div class="inner">
+                        <div class = "img">
+                            <img src="Images\WeightLoss.jpg" alt="workout2">
+                        </div>
+    
+                        <div class = "overlay">
+                            <div class="text">
+                                <h4>Weight Loss</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, quo quae vel saepe,
+                                eaque, architecto doloremque deleniti tenetur veniam totam aspernatur nisi. 
+                                Possimus nobis fugit repudiandae cupiditate assumenda praesentium optio?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class = "container">
+            <div class = content>
+                <div class= "box">
+                    <div class="inner">
+                        <div class = "img">
+                            <img src="Images\ContestPrep.jpg" alt="Images\workout1">
+                        </div>
+    
+                        <div class = "overlay">
+                            <div class="text ">
+                                <h4>Contest Prep</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, quo quae vel saepe,
+                                    eaque, architecto doloremque deleniti tenetur veniam totam aspernatur nisi. 
+                                    Possimus nobis fugit repudiandae cupiditate assumenda praesentium optio?</p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+    
+                <div class= "box">
+                    <div class="inner">
+                        <div class = "img">
+                            <img src="Images\MuscularDevelopment.jpg" alt="workout2">
+                        </div>
+    
+                        <div class = "overlay">
+                            <div class="text">
+                                <h4>Muscle Development</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, quo quae vel saepe,
+                                eaque, architecto doloremque deleniti tenetur veniam totam aspernatur nisi. 
+                                Possimus nobis fugit repudiandae cupiditate assumenda praesentium optio?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </main>
+
+
+    <section class="test2">
+        <div class="container">
+            <div class="title1 text-center">
+               <h1>My Clients</h1> 
+            </div>
+            <div class="slider">
+                <div class="slide active">
+                    <p>"Lorem ipsum dolor sit amet consectetur, 
+                        adipisicing elit. Ex quod aut voluptatem! 
+                        Similique iusto qui illum dolores aperiam labore!
+                        iam, tempora ipsa itaque voluptatum non quasi facere 
+                        commodi in accusamus."</p>
+                        <div class="client-info">
+                            <h3>Golge Game</h3>
+                            <span>Founder at Gikio</span>
+                        </div>
+                </div>
+
+                <div class="slide">
+                    <p>"Lorem ipsum dolor sit amet consectetur, 
+                        adipisicing elit. Ex quod aut voluptatem! 
+                        Similique iusto qui illum dolores aperiam labore!
+                        iam, tempora ipsa itaque voluptatum non quasi facere 
+                        commodi in accusamus."</p>
+                        <div class="client-info">
+                            <h3>Donkey Man</h3>
+                            <span>Founder at Gikio</span>
+                        </div>
+                </div>
+
+                <div class="slide ">
+                    <p>"Lorem ipsum dolor sit amet consectetur, 
+                        adipisicing elit. Ex quod aut voluptatem! 
+                        Similique iusto qui illum dolores aperiam labore!
+                        iam, tempora ipsa itaque voluptatum non quasi facere 
+                        commodi in accusamus."</p>
+                        <div class="client-info">
+                            <h3>Susan Boyle</h3>
+                            <span>Founder at Gikio</span>
+                        </div>
+                </div>
+
+            
+                <div class="slider-indicator" id="work">
+                    <img src="Images\Profile1.jpg" alt="pic1" class="active" data-id="0">
+                    <img src="Images\Profile2.jpg" alt="pic1" class="" data-id="1">
+                    <img src="Images\Profile3.jpg" alt="pic1" class = "" data-id="2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <script src = "burger.js" async></script>
+    <footer></footer>
 </body>
+
+
+
 </html>
