@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script type =  module src="script.js"></script>
+    
     <link rel="stylesheet" href="style.css">
     <script type = "module" src="menu.js"></script>
+    <script src="script.js" defer></script>
+    <script src = "burger.js"  async></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name = "description" content = "Home Page of a portfolio website for a personal trainer named Kent Wilson">
@@ -241,10 +243,66 @@
         </div>
     </section>
 
-    
+    <section class= "contact-me">
+        <from class="contain">
+            <h2>Contanct Me</h2>
+            <div class="row">
+                <div class="col">
+                    <div class = "inputBox">
+                        <input type="text" name = "" required="required">
+                        <span class = "text">First Name</span>
+                        <span class = "line"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class = "inputBox">
+                        <input type="text" name = "" required="required">
+                        <span class = "text">Last Name</span>
+                        <span class = "line"></span>
+                    </div>
+                </div>
+            </div>
 
-    <script src = "burger.js" async></script>
-    <footer></footer>
+            <div class="row">
+                <div class="col">
+                    <div class = "inputBox">
+                        <input type="text" name = "" required="required">
+                        <span class = "text">Email</span>
+                        <span class = "line"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class = "inputBox">
+                        <input type="text" name = "" required="required">
+                        <span class = "text">Mobile</span>
+                        <span class = "line"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class = "inputBox textarea">
+                        <textarea required= "required"></textarea>
+                        <span class = "text">Tell me about your fitness goal</span>
+                        <span class = "line"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <button class="reset">Let's do this</button>
+                    <h6 class="submit">I look forward to working with you<h6>
+                </div>
+            </div>
+
+        </form>
+    </section>
+
+ 
+<!--     
+    <footer></footer> -->
 </body>
 
 

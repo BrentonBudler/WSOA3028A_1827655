@@ -603,7 +603,8 @@ background-color: white;
    
 }
 
-.test .content .box:hover .overlay{
+.test .content .box:hover .overlay,
+.test .content .box:active .overlay{
     opacity:0.75 ;
     
 }
@@ -744,14 +745,164 @@ background-color: white;
 }
 
 
+.contact-me{
+    background-color:black;
+     width: 100%;
+    /* padding: 50px 15px; */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 75vh;
+}
+
+.contain{
+    width:80%;
+    padding: 20px;
+}
+
+.contain h2{
+    width: 100%;
+    color: white;
+    font-size: 36px; 
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contain .row{
+    position: relative; 
+    width:100%; 
+    display:grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+}
+
+.contain .row .col{
+    position: relative; 
+    width: 100% ;
+    padding: 0 10px;
+    margin: 30px 0 10px; 
+    transition: 0.5s;
+}
+
+.contain .row .inputBox{
+    position: relative; 
+    width: 100%; 
+    height: 40px;
+    color: dodgerblue;
+}
+
+.contain .row .inputBox input,
+.contain .row .inputBox.textarea textarea{
+    position: absolute; 
+    width: 100%;
+    height: 100%; 
+    background: transparent;
+    box-shadow: none; 
+    border: none;
+    outline:none; 
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1;
+    color: black;
+}
+
+.contain .row .inputBox .text{
+    position: absolute;
+    top:0px; 
+    left:0px;
+    line-height:40px; 
+    font-size: 18px; 
+    padding: 0 10px; 
+    display: block;
+    transition: 0.5s; 
+    pointer-events: none;  
+}
+
+.contain .row .inputBox input:focus + .text,
+.contain .row .inputBox input:valid + .text
+{
+    top:-35px; 
+    left: -10px;;
+
+}
 
 
+.contain .row .inputBox .line{
+    position: absolute;
+    bottom:0; 
+    display: block; 
+    width: 100%; 
+    height: 2px;
+    background: white; 
+    transition: 0.5s;
+    border-radius:2px; 
+    pointer-events:none;
+
+}
+
+.contain .row .inputBox input:focus ~ .line,
+.contain .row .inputBox input:valid ~ .line
+{
+    height:100%;
+}
+
+.contain .row .inputBox.textarea{
+    position:relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+}
 
 
+.contain .row .inputBox.textarea textarea{
+    height: 100%; 
+    resize: none;
+    font-family: inherit;
+}
 
+.contain .row .inputBox textarea:focus + .text,
+.contain .row .inputBox textarea:valid + .text
+{
+    top:-35px; 
+    left: -10px;;
+}
 
+.contain .row .inputBox textarea:focus ~ .line,
+.contain .row .inputBox textarea:valid ~ .line
+{
+    height:100%;
+}
 
+.contain button{
+    padding-top:20px; 
+    border-radius:4px; 
+    color:white;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid white; 
+    padding: 12px 25px; 
+    text-decoration: none;
+    display: inline-block; 
+    font-size: 14px; 
+    text-transform: uppercase; 
+    transition: all 0.5s ease;
+    font-weight: 600; 
+}
 
+.contain button:hover{
+    background-color: white;
+    color:black; 
+}
+
+.contain .submit{
+    color: white;
+    padding: 10px;
+    font-size:16px;
+    display: none;
+}
+
+.contain .submit.clicked{
+    display: block;
+}
 
 footer{
     clear: both;

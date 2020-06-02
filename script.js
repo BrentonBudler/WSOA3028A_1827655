@@ -1,19 +1,19 @@
-//Code to display back to top button and give it the functionality of scrolling to the top 
-mybutton = document.getElementById("topButton");
-window.onscroll = function() {scrollFunction()};
+// //Code to display back to top button and give it the functionality of scrolling to the top 
+// mybutton = document.getElementById("topButton");
+// window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+// function scrollFunction() {
+//   if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+//     mybutton.style.display = "block";
+//   } else {
+//     mybutton.style.display = "none";
+//   }
+// }
 
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+// function topFunction() {
+//   document.body.scrollTop = 0;
+//   document.documentElement.scrollTop = 0;
+// }
 
 //CLIENT TESTIMONIALS
 const slides = document.querySelector(".slider").children; 
@@ -35,3 +35,19 @@ for (let i = 0; i < indicatorImages.length; i++) {
   })
   
 }
+
+
+//Clear input fields
+
+const clearButton = document.querySelector(".reset");
+clearButton.addEventListener("click",function(){
+ var list = document.getElementsByClassName("inputBox");
+ for (let item of list){
+    console.log(item.children[0].value);
+    item.children[0].value = "";
+ }
+
+ const feedback = document.querySelector(".submit");
+ feedback.classList.add("clicked");
+
+});
