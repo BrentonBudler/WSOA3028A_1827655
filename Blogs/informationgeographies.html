@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <script src="../script.js"></script>
+    <script src="../blogHouse.js" async></script>
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../unstyled.css">
+    <link rel="stylesheet" href="../blogstyle.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name = "description" content = "A close reading of Towards a study of information geographies">
@@ -11,19 +12,26 @@
     <meta name = "author" content = "1827655">
     <title>Towards a study of Information Geographies </title>
 </head>
-<style>
-    .body{
-        align-content: center;
-        text-align: center;
-    }
-</style>
 
-<body>
+
+<body class = "geography">
+
+    <header class = "container">
+        <h1 class = "brand-name">development blogs</h1>
+        <div class = "homeLink">
+            <i class="fa fa-home"></i>
+        </div>
+        <nav class = "navbar"> 
+            <ul>
+                <li><a href="/WSOA3028A_1827655/index.html">Return to website</a></li>
+            </ul>
+        </nav>
+    </header>
     
-<section w3-include-html="../header.html"></section>
-
-<article class = "center">
     <h1 class= "heading">Towards a study of Information Geographies</h1>
+
+<article class = "holder">
+    
 
     <section>
         <h3>Introduction</h3>
@@ -160,19 +168,12 @@
 
     <button onclick="window.location.href='onlinelearning.html'" class = "blogBut">Previous Blog Post</button>
     <button onclick="topFunction()" id="topButton" class="blogBut">Back To Top</button>
-    
+    <button onclick="window.location.href='inequalities.html'" class = "blogBut">Next Blog Post</button>
 
 
 
 </article>
 
-
-
-<section w3-include-html="../footer.html"></section>
-
-<script>
-    includeHTML();
-</script>
     
 </body>
 </html>

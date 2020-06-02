@@ -10,6 +10,22 @@ body{
     background-size: cover; 
 }
 
+.homeLink .fa{
+    font-size: 20px; 
+    height: 27px; 
+    width: 35px; 
+    line-height: 27px; 
+    text-align: center;
+    cursor: pointer; 
+    display: none;
+}
+
+
+h3{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
 .impressions{
     background-image: url("Images/space.jpg");
 
@@ -22,6 +38,35 @@ body{
 
 .tech{
     background-image: url("Images/tech.jpg");
+}
+
+.oneweb{
+    background-image: url("Images/oneweb.jpg");
+}
+
+.interactivity{
+    background-image: url("Images/interact.jpg");
+}
+
+.learning{
+    background-image: url("Images/learning.jpg");
+}
+
+
+.geography{
+    background-image: url("Images/geography.jpg");
+}
+
+.inequalities{
+    background-image: url("Images/digital.jpg");
+}
+
+.portrait{
+    background-image: url("Images/portrait.jpg");
+}
+
+.tweet{
+    background-image: url("Images/tweet.jpg");
 }
 
 .holder{
@@ -38,6 +83,7 @@ p{
         margin-right:auto; 
         width:100%; 
         padding-bottom: 1%;
+        line-height: 30px;
         
 }
 
@@ -60,14 +106,26 @@ p{
     text-align: center;
     font-size: 30pt;
     padding-top:400px;
-    padding-bottom:35%;
+    padding-bottom:30%;
 
 }
 
-@media(max-width: 750px){
-.heading{
-    padding-bottom: 50%;
-}
+
+
+@media(max-width: 991px){
+
+
+    .homeLink .fa{
+        display: inline-block;
+    } 
+
+    .holder{
+        width: 75%;
+    }
+
+    h3{
+        font-size: 25px;
+    }
 }
 
 .top{
@@ -90,7 +148,7 @@ p{
     font-weight: 600; 
     }
 
-    .blogBut:hover{
-        color:black; 
-        background-color: white;
-    }
+.blogBut:hover{
+    color:black; 
+    background-color: white;
+}

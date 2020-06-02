@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <script src="../script.js"></script>
+    <script src="../blogHouse.js" async></script>
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../unstyled.css">
+    <link rel="stylesheet" href="../blogstyle.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name = "description" content = "A blog post interactivity and how it relates to the world wide web">
@@ -11,19 +12,26 @@
     <meta name = "author" content = "1827655">
     <title>Interactivity</title>
 </head>
-<style>
-    .body{
-        align-content: center;
-        text-align: center;
-    }
-</style>
 
-<body>
+
+<body class= "interactivity">
     
-<section w3-include-html="../header.html"></section>
+    <header class = "container">
+        <h1 class = "brand-name">development blogs</h1>
+        <div class = "homeLink">
+            <i class="fa fa-home"></i>
+        </div>
+        <nav class = "navbar"> 
+            <ul>
+                <li><a href="/WSOA3028A_1827655/index.html">Return to website</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<article class = "center">
     <h1 class= "heading">Interactivity</h1>
+
+<article class = "holder">
+
 
     <section>
         <h3>What interactivity means on the www</h3>
@@ -102,11 +110,5 @@
 
 
 
-<section w3-include-html="../footer.html"></section>
-
-<script>
-    includeHTML();
-</script>
-    
 </body>
 </html>
