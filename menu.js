@@ -1,11 +1,10 @@
 const menuItems = [
     {title: 'Home', link: '/WSOA3028A_1827655/index.html'},
-    {title: 'Website info', link: '/WSOA3028A_1827655/WebsiteInfo.html'}, 
-    {title: 'Training', link: '/WSOA3028A_1827655/TrainingPage.html'},
-    {title: 'Nutrition', link: '/WSOA3028A_1827655/NutritionPage.html'},
-    {title: 'Events', link: '/WSOA3028A_1827655/EventsPage.html'},
-    {title: 'Blogs', link: '/WSOA3028A_1827655/blogPage.html'},
-    {title: 'Contact Me', link: '/WSOA3028A_1827655/ContactPage.html'}
+    {title: 'About Me', link: '#about-me'}, 
+    {title: 'Training', link: '#training'},
+    {title: 'My Clients', link: '#testimonials'},
+    {title: 'Contact Me', link: '#contact-me'},
+    {title: 'Contact Me', link: '/WSOA3028A_1827655/blogPage.html'}
 ]
 
 

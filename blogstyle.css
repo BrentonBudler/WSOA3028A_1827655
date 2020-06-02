@@ -1,21 +1,46 @@
 body{
     background-color:black;
     color:white; 
+    align-content: center;
+    text-align: center;
+    background-color: black;
+    height: 750px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.impressions{
+    background-image: url("Images/space.jpg");
+
+}
+
+.web{
+    background-image: url("Images/web.jpg");
 }
 
 
+.tech{
+    background-image: url("Images/tech.jpg");
+}
 
-.center{
-        text-align: center;
-        align-content: center;
-    }
+.holder{
+    background-color: hsla(0, 0%, 0%, 0.5);
+    width: 50%;
+    align-self: center;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
 
 p{
         margin-left:auto;
         margin-right:auto; 
-        width:50%; 
+        width:100%; 
         padding-bottom: 1%;
+        
 }
+
 
 .sec{
     padding-bottom: 1%;
@@ -30,10 +55,19 @@ p{
 }
 
 .heading{
+
     color:white;
     text-align: center;
-    padding-top:5%;
-    padding-bottom:1%;
+    font-size: 30pt;
+    padding-top:400px;
+    padding-bottom:35%;
+
+}
+
+@media(max-width: 750px){
+.heading{
+    padding-bottom: 50%;
+}
 }
 
 .top{
