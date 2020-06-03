@@ -12,7 +12,7 @@ const Blogs = [
     {title: '.digital', link: 'Blogs/inequalities.html'},
     {title: '.portrait', link: 'Blogs/portrait.html'},
     {title: '.tweet', link: 'Blogs/tweet.html'},
-    {title: '.crime', link: 'Blogs/crime.html'},
+    {title: '.crime', link: 'Blogs/criminal.html'},
     {title: '.race', link: 'Blogs/race.html'}
 ]
 

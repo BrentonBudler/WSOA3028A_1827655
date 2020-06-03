@@ -14,6 +14,8 @@ body{
 }
 
 
+
+
 .black-back{
     background-color: black;
 }
@@ -478,12 +480,12 @@ background-color: white;
     margin:auto;
 }
 
-.services{
+.blogs{
     background-color:black;
     padding: 100px 0px 70px;
 }  
 
-.services .service-content{
+.blogs .blogs-content{
     flex: 0 0 100%; 
     max-width: 100%;
     display: flex; 
@@ -493,7 +495,7 @@ background-color: white;
 
 }
 
-.services .service-content .box{
+.blogs .blogs-content .box{
     background-color: white;
     padding: 30px; 
     flex: 0 0 calc(33.33% - 20px);
@@ -506,7 +508,7 @@ background-color: white;
 }
 
 
-.services .service-content .box::before{
+.blogs .blogs-content .box::before{
     content:'';
     height:5px; 
     background-color: dodgerblue;
@@ -519,11 +521,11 @@ background-color: white;
     transition: all .5s ease;
 }
 
-.services .service-content .box:hover::before{
+.blogs .blogs-content .box:hover::before{
     width:100%
 }
 
-.services .service-content .box .icon{
+.blogs .blogs-content .box .icon{
     height: 60px; 
     width: 60px; 
     background-color: dodgerblue;
@@ -533,20 +535,20 @@ background-color: white;
     
 }
 
-.services .service-content .box .icon .fa{
+.blogs .blogs-content .box .icon .fa{
     font-size: 25px; 
     color: white; 
     line-height: 60px;
 }
 
-.services .service-content .box h5{
+.blogs .blogs-content .box h5{
     font-size: 16px; 
     font-weight: 600; 
     color: black;
     margin: 0 ;
 }
 
-.services .service-content .box p{
+.blogs .blogs-content .box p{
     font-size: 15px;
     font-weight: 400; 
     line-height:24px; 
@@ -554,13 +556,13 @@ background-color: white;
     margin: 10px 0 15px;
 }
 
-@media(max-width: 750px){
-    .services .service-content{
+@media(max-width: 991px){
+    .blogs .blogs-content{
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .services .service-content .box{
+    .blogs .blogs-content .box{
         background-color: white;
         padding: 30px; 
         flex: 0 0 100%;
@@ -570,29 +572,29 @@ background-color: white;
 }
 
 
-.test{
+.train{
     background-color:black;
     padding: 100px 0px 70px;
 }
 
-.test .title1 h1{
+.train .title1 h1{
     margin-top:1%;
 }
 
-.test .content{
+.train .content{
     display: flex; 
     flex-wrap: wrap;
 
 }
 
-.test .content .box{
+.train .content .box{
     flex: 0 0 50%;
     max-width: 50%;
     padding: 15px; 
     
 }
 
-.test .content .box .overlay{
+.train .content .box .overlay{
     opacity: 0;
     transition: .5s ease;
     background-color:black;
@@ -609,29 +611,29 @@ background-color: white;
    
 }
 
-.test .content .box:hover .overlay,
-.test .content .box:active .overlay{
+.train .content .box:hover .overlay,
+.train .content .box:active .overlay{
     opacity:0.75 ;
     
 }
 
-.test .content .box .inner{
+.train .content .box .inner{
     position: relative;
     text-align: center;
     color: white;
 }
 
-.test .content .box .inner .img img{
+.train .content .box .inner .img img{
     width:100%;
     height: 100%;
 }
 
-.test .content .box .inner .text{
+.train .content .box .inner .text{
     flex:0 0 100%;
     
 }
 
-.test .content .box .inner .text h4{
+.train .content .box .inner .text h4{
     font-size:20px;
     margin:0;
     padding: 0 0 15px; 
@@ -641,7 +643,7 @@ background-color: white;
     
 }
 
-.test .content .box .inner .text p{
+.train .content .box .inner .text p{
     font-size: 15px; 
     line-height: 20px; 
     color: grey; 
@@ -652,7 +654,7 @@ background-color: white;
 
 
 @media(max-width: 750px){
-    .test .content .box{
+    .train .content .box{
         flex: 0 0 100%;
         max-width: 100%;
         padding: 15px; 
@@ -665,7 +667,7 @@ background-color: white;
     background-color: white;
     float: left;
     width: 100%; 
-    padding: 50px 15px;
+    padding: 100px 15px;
     z-index: 1;
 }
 
@@ -911,13 +913,11 @@ background-color: white;
 }
 
 footer{
-    clear: both;
+
     position: relative;
     height: 200px;
-    margin-top: -200px;
     background: black;
-    
-    
+
 }
 
 footer .logo{

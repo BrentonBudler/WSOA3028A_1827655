@@ -5,7 +5,7 @@ body{
     text-align: center;
     background-color: black;
     height: 750px; 
-    background-position: center; 
+    background-position: top; 
     background-repeat: no-repeat; 
     background-size: cover; 
 }
@@ -67,6 +67,14 @@ h3{
 
 .tweet{
     background-image: url("Images/tweet.jpg");
+}
+
+.crime{
+    background-image: url("Images/crime.jpg");
+}
+
+.race{
+    background-image: url("Images/race.jpg");
 }
 
 .holder{

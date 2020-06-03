@@ -4,7 +4,7 @@ const menuItems = [
     {title: 'Training', link: '#training'},
     {title: 'My Clients', link: '#testimonials'},
     {title: 'Contact Me', link: '#contact-me'},
-    {title: 'Contact Me', link: '/WSOA3028A_1827655/blogPage.html'}
+    {title: 'Blog', link: '/WSOA3028A_1827655/blogPage.html'}
 ]
 
 
