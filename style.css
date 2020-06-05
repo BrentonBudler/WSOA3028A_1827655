@@ -950,6 +950,24 @@ color:white;
 }
 
 
+.homeLink .fa{
+    font-size: 20px; 
+    height: 27px; 
+    width: 35px; 
+    line-height: 27px; 
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    display: none;
+}
+
+@media(max-width: 991px){
+
+
+    .homeLink .fa{
+        display: inline-block;
+    } 
+}
 
 
 
