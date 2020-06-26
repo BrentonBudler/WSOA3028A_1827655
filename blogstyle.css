@@ -77,6 +77,14 @@ h3{
     background-image: url("Images/race-min.webp");
 }
 
+.hegemonies{
+    background-image: url("Images/hegemonies-min.webp");
+}
+
+.revolution{
+    background-image: url("Images/revolution-min.webp");
+}
+
 .holder{
     background-color: hsla(0, 0%, 0%, 0.5);
     width: 50%;

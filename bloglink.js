@@ -13,7 +13,10 @@ const Blogs = [
     {title: '.portrait', link: 'Blogs/portrait.html'},
     {title: '.tweet', link: 'Blogs/tweet.html'},
     {title: '.crime', link: 'Blogs/criminal.html'},
-    {title: '.race', link: 'Blogs/race.html'}
+    {title: '.race', link: 'Blogs/race.html'},
+    {title: '.hegemonies', link: 'Blogs/digitalhegemonies.html'},
+    {title: '.revolution', link: 'Blogs/revolution.html'}
+
 ]
 
 for (let blog of Blogs){
@@ -26,3 +29,4 @@ for (let blog of Blogs){
     });
     
 }
+

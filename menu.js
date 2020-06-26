@@ -4,6 +4,7 @@ const menuItems = [
     {title: 'Training', link: '#training'},
     {title: 'My Clients', link: '#testimonials'},
     {title: 'Contact Me', link: '#contact-me'},
+    {title: 'Fitness in the City', link: '/WSOA3028A_1827655/mapPage.html'},
     {title: 'Blog', link: '/WSOA3028A_1827655/blogPage.html'}
 ]
 
