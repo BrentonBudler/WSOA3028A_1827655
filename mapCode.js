@@ -4,26 +4,19 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiYmlnYmFkYnJlbnQiLCJhIjoiY2ticm43MzhtMXpzdDJ4c
 
 var bounds = [
    [27.4, -26.7], // Southwest coordinates 27.934, -26.316
-    [28.7, -25.5] // Northeast coordinates
+    [28.7, -25.65] // Northeast coordinates
   ];
 
 
 var map = new mapboxgl.Map({
-container: 'map',
-//Customized map style I created using mapbox studio to ensure map matches websites style
-style: 'mapbox://styles/bigbadbrent/ckbrpdlmr0ddi1imroqf2m57j/draft',
-//Center on Johannesburg center:  [28.0473, -26.2041],
-center: [28.0473, -26.2041],
-// Set default zoom so Johannesburg and surrounding areas can be seen 
-//zoom: 10,
-// Set min zoom so user cannot zoom out further than Joburg and surrounding areas 
-//minZoom: 10.5,
-// Set max zoom so user cannot zoom in to the point where area names dissappear 
-//maxZoom: 14,
-//Lock rotation 
-dragRotate: false,
-//
-maxBounds: bounds
+    container: 'map',
+    style: 'mapbox://styles/bigbadbrent/ckbrpdlmr0ddi1imroqf2m57j/draft',
+    center: [28.0473, -26.2],
+    zoom: 10,
+    minZoom: 10.5,
+    maxZoom: 14,
+    dragRotate: false,
+    maxBounds: bounds
 });
 
 map.on('load', function() {
@@ -32,14 +25,12 @@ map.on('load', function() {
         'data': {
             'type': 'FeatureCollection',
             'features': [
-
-
                 {
                     'type': 'Feature',
                     'properties': {
                         'description':
                             '<h3>sweat workout party</h3>  <img src="Images/two.jpg" alt="Group of people dancing"> <h4>2 March 2019</h4> <a href="https://www.quicket.co.za/events/63252-planet-fitness-sweat-workout-party-gauteng-2019/#/" class="learn-more">learn more</a>' ,
-                        'icon': 'fitness-centre'
+                        'icon': 'fire-station'
                     },
                     'geometry': {
                         'type': 'Point',
@@ -52,7 +43,7 @@ map.on('load', function() {
                     'properties': {
                         'description':
                             '<h3>last man standing</h3>  <img src="Images/three.jpg" alt="Person Climbing"> <h4>24 May 2019</h4> <a href="https://www.lms360.net/" class="learn-more">learn more</a>' ,
-                        'icon': 'fitness-centre'
+                        'icon': 'fire-station'
                     },
                     'geometry': {
                         'type': 'Point',
@@ -66,7 +57,7 @@ map.on('load', function() {
                     'properties': {
                         'description':
                             '<h3>GO switch launch</h3>  <img src="Images/four.jpg" alt="Woman working out"> <h4>16 March 2019</h4> <a href="https://switchplaygroundsa.com/studios/sandton/" class="learn-more">learn more</a>' ,
-                        'icon': 'fitness-centre'
+                        'icon': 'fire-station'
                     },
                     'geometry': {
                         'type': 'Point',
@@ -79,7 +70,7 @@ map.on('load', function() {
                     'properties': {
                         'description':
                             '<h3>Rand Show Fitness Expo</h3>  <img src="Images/five.jpg" alt="Fitness runway models"> <h4>19 April 2019</h4> <a href="https://randshow.co.za/" class="learn-more">learn more</a>' ,
-                        'icon': 'fitness-centre'
+                        'icon': 'fire-station'
                     },
                     'geometry': {
                         'type': 'Point',
@@ -92,7 +83,7 @@ map.on('load', function() {
                     'properties': {
                         'description':
                             '<h3>Arnold Classic Sports Festival</h3>  <img src="Images/six.jpg" alt="Arnold Sports Festival Logo"> <h4>19 April 2019</h4> <a href="http://www.arnoldclassicafrica.com/" class="learn-more">learn more</a>' ,
-                        'icon': 'fitness-centre'
+                        'icon': 'fire-station'
                     },
                     'geometry': {
                         'type': 'Point',
@@ -105,7 +96,7 @@ map.on('load', function() {
                     'properties': {
                         'description':
                             '<h3>Mind Booty Soul Pop-up Experience</h3>  <img src="Images/seven.jpg" alt="Woman smiling"> <h4>28 September 2019</h4> <a href="https://www.fitnessmag.co.za/mindbootysoul-pop-up-experience-2/" class="learn-more">learn more</a>' ,
-                        'icon': 'fitness-centre'
+                        'icon': 'fire-station'
                     },
                     'geometry': {
                         'type': 'Point',
@@ -118,25 +109,11 @@ map.on('load', function() {
                     'properties': {
                         'description':
                             '<h3>Trove Wellness Bootcamp</h3>  <img src="Images/eight.jpg" alt="Group of people working out"> <h4>23 November 2019</h4> <a href="https://www.webtickets.co.za/v2/Event.aspx?itemid=1495590841" class="learn-more">learn more</a>' ,
-                        'icon': 'fitness-centre'
+                        'icon': 'fire-station'
                     },
                     'geometry': {
                         'type': 'Point',
                         'coordinates': [28.040988, -26.146002]
-                    }
-                },
-
-
-                {
-                    'type': 'Feature',
-                    'properties': {
-                        'description':
-                            '<h3>Grudge Match</h3>  <img src="Images/event1.jpg" alt="logo for event"> <h4>16 August 2019</h4> <a href="https://www.capturefit.co.za/event/the-grudge-xi" class="learn-more">learn more</a>' ,
-                        'icon': 'fitness-centre'
-                    },
-                    'geometry': {
-                        'type': 'Point',
-                        'coordinates': [28.124129, -26.258551]
                     }
                 },
 
@@ -145,18 +122,13 @@ map.on('load', function() {
                     'properties': {
                         'description':
                             '<h3>MiFitness games </h3>  <img src="Images/event2.jpg" alt="logo for event"> <h4>25 October 2019</h4> <a href="https://www.instagram.com/mifitnessgames/" class="learn-more">learn more</a>' ,
-                        'icon': 'fitness-centre'
+                        'icon': 'fire-station'
                     },
                     'geometry': {
                         'type': 'Point',
                         'coordinates': [27.943357,-26.062212]
                     }
                 }
-
-
-
-
-
             ]
         }  
     });
@@ -315,6 +287,123 @@ map.on('load', function() {
             ]
         }
     });
+
+    map.addSource('gyms', {
+        'type': 'geojson',
+        'data': {
+            'type': 'FeatureCollection',
+            'features': [
+                {
+                    'type': 'Feature',
+                    'properties': {
+                        'description':
+                            '<h3>Virgin Active Old Eds</h3>  <img src="Images/gym1.jpg" alt="entrance of gym"> <a href="http://www.virginactive.co.za/clubs/old-eds" class="learn-more">learn more</a>' ,
+                        'icon': 'fitness-centre'
+                    },
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [28.063206, -26.157309]
+                    }
+                },
+
+                {
+                    'type': 'Feature',
+                    'properties': {
+                        'description':
+                            '<h3>Virgin Active Victory Park</h3>  <img src="Images/gym2.jpg" alt="inside of a gym"> <a href="http://www.virginactive.co.za/clubs/victory-park?utm_source=google&utm_medium=organic&utm_campaign=GMB&utm_content=VICTORY_PARK" class="learn-more">learn more</a>' ,
+                        'icon': 'fitness-centre'
+                    },
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [28.009148, -26.138675]
+                    }
+                },
+
+                {
+                    'type': 'Feature',
+                    'properties': {
+                        'description':
+                            '<h3>CityROCK</h3>  <img src="Images/gym3.jpg" alt="people on indoor rock climbing wall"> <a href="http://www.cityrock.co.za/johannesburg" class="learn-more">learn more</a>' ,
+                        'icon': 'fitness-centre'
+                    },
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [27.976285, -26.106651]
+                    }
+                },
+
+                {
+                    'type': 'Feature',
+                    'properties': {
+                        'description':
+                            '<h3>Planet Fitness Bedfordview</h3>  <img src="Images/gym4.jpg" alt="Line of elliptical trainers in gym"> <a href="https://www.planetfitness.co.za/rosebank/" class="learn-more">learn more</a>' ,
+                        'icon': 'fitness-centre'
+                    },
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [28.125264, -26.188450]
+                    }
+                },
+
+                {
+                    'type': 'Feature',
+                    'properties': {
+                        'description':
+                            '<h3>Unchained Boxing Gym</h3>  <img src="Images/gym5.jpg" alt="group of people boxing"> <a href="http://unchainedgym.co.za/" class="learn-more">learn more</a>' ,
+                        'icon': 'fitness-centre'
+                    },
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [28.016662, -26.142553]
+                    }
+                },
+
+                {
+                    'type': 'Feature',
+                    'properties': {
+                        'description':
+                            '<h3>Pilates on 7th</h3>  <img src="Images/gym6.jpg" alt="inside of pilates studio"> <a href="http://www.pilateson7th.co.za/" class="learn-more">learn more</a>' ,
+                        'icon': 'fitness-centre'
+                    },
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [28.027873, -26.144322]
+                    }
+                },
+
+                {
+                    'type': 'Feature',
+                    'properties': {
+                        'description':
+                            '<h3>AeroGym</h3>  <img src="Images/gym7.jpg" alt="inside of gym"> <a href="https://www.facebook.com/aerogymfitness/" class="learn-more">learn more</a>' ,
+                        'icon': 'fitness-centre'
+                    },
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [27.899821, -26.237312]
+                    }
+                },
+
+                {
+                    'type': 'Feature',
+                    'properties': {
+                        'description':
+                            '<h3>CrossFit Alberton 2.0</h3>  <img src="Images/gym8.jpg" alt="group of people listening to personal trainer"> <a href="http://www.crossfitalberton2.co.za/" class="learn-more">learn more</a>' ,
+                        'icon': 'fitness-centre'
+                    },
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [28.124034, -26.260473]
+                    }
+                }
+
+
+
+
+
+            ]
+        }
+    });
     
     map.addLayer({
         'id': 'events',
@@ -341,12 +430,23 @@ map.on('load', function() {
         }
     });
 
-
-    
     map.addLayer({
         'id': 'restaurants',
         'type': 'symbol',
         'source': 'restaurants',
+        
+        'layout': {
+            'icon-image': '{icon}-15',
+            'icon-allow-overlap': true,
+            'icon-size': 2,
+            'visibility': 'visible'
+        }
+    });
+
+    map.addLayer({
+        'id': 'gyms',
+        'type': 'symbol',
+        'source': 'gyms',
         
         'layout': {
             'icon-image': '{icon}-15',
@@ -409,6 +509,24 @@ map.on('load', function() {
           
     });
 
+
+    map.on('click', 'gyms', function(e) {
+        var coordinates = e.features[0].geometry.coordinates.slice();
+        var description = e.features[0].properties.description;
+
+
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+
+        new mapboxgl.Popup({offset: 25})
+            .setLngLat(coordinates)
+            .setHTML(description)
+            .addTo(map)
+            //.addClassName("popup");
+          
+    });
+
     map.on('mouseenter', 'events', function() {
         map.getCanvas().style.cursor = 'pointer';
     });
@@ -417,7 +535,33 @@ map.on('load', function() {
         map.getCanvas().style.cursor = '';
     });
 
-    var toggleableLayerIds = ['events', 'runs', 'restaurants'];
+    map.on('mouseenter', 'runs', function() {
+        map.getCanvas().style.cursor = 'pointer';
+    });
+
+    map.on('mouseleave', 'runs', function() {
+        map.getCanvas().style.cursor = '';
+    });
+    
+    map.on('mouseenter', 'restaurants', function() {
+        map.getCanvas().style.cursor = 'pointer';
+    });
+
+    map.on('mouseleave', 'restaurants', function() {
+        map.getCanvas().style.cursor = '';
+    });
+
+    map.on('mouseenter', 'gyms', function() {
+        map.getCanvas().style.cursor = 'pointer';
+    });
+
+    map.on('mouseleave', 'gyms', function() {
+        map.getCanvas().style.cursor = '';
+    });
+
+    
+
+    var toggleableLayerIds = ['events', 'runs', 'restaurants','gyms'];
  
 
 
@@ -436,7 +580,7 @@ map.on('load', function() {
          
         var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
          
-        // toggle layer visibility by changing the layout object's visibility property
+        
         if (visibility === 'visible') {
         map.setLayoutProperty(clickedLayer, 'visibility', 'none');
         this.className = '';
