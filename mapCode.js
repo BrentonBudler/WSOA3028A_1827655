@@ -605,5 +605,6 @@ map.addControl(
         })
     );
 
-    map.addControl(new mapboxgl.NavigationControl());
+    map.addControl(new mapboxgl.NavigationControl({position: "bottom-left"}));
 
+    

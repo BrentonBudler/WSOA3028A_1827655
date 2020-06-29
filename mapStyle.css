@@ -154,9 +154,13 @@ header .navbar ul li a.active::before{
 
 @media(max-width: 991px){
 
+    header{
+        justify-content: center;
+    }
 
     .homeLink .fa{
         display: inline-block;
+        
     } 
 }
 
