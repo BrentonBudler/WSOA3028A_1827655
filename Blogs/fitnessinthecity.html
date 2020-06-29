@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../script.js"></script>
+    <script type="module" src="blogheader.js"></script>
+    <script src="../blogHouse.js" async></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../blogstyle.css">
+    <script src="../BackToTop.js" async></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content = "A blog post exploring the creation of an interactive location and events platform">
+    <meta name ="keywords" content = "Blog, Mapbox, Johannesburg, Location, Fitness">
+    <meta name = "author" content = "1827655">
+    <title>Fitness in the City </title>
+</head>
+
+
+<body class = "fitness">
+
+    <header></header>
+    
+    <h1 class= "heading">Fitness in the City </h1>
+
+<article class = "holder">
+    
+
+    <section>
+        <h3>Introduction</h3>
+        <p>The original creative vision I had for Kent Wilson’s Portfolio Website included an events page where users would be able to view 
+            upcoming fitness-related events. Upon further reflection on the characters primary goal; to improve people’s quality of life, 
+            I decided to extrapolate this events page idea into the unique platform Fitness in the City. The purpose of the platform is to 
+            support people who would like to live a healthier lifestyle. It allows them to view gyms, healthy restaurants, upcoming running 
+            races and fitness-related events located in and around the Johannesburg area. The incorporation of this page into the website 
+            has the end-goal of improving user traffic on the site and through that, hopefully, boosting the number of people who reach out 
+            to Kent to become his clients. The hypothetical time in which Kent would have launched this website would be around the beginning 
+            of 2019, this would allow for him to maximize the number of clients he acquired as the beginning of the year always contains an 
+            inflated amount of people looking to improve their fitness and quality of life as one of their New Year’s resolutions. </p>
+
+
+    </section>
+
+    <section>
+        <h3>External Dependency </h3>
+        <p>The external dependency I used to develop Fitness in the City is 
+            <a href="https://www.mapbox.com/" style="color:white">Mapbox</a>.
+             Mapbox is an open source mapping 
+            platform for custom designed maps which allows the integration of location into any mobile or web application. The other alternative 
+            for incorporating location into the website would be Google Maps. I chose Mapbox over Google Maps because of Mapbox’s ability to fully 
+            customize the way your map looks. There is also a large amount of support documentation for the Mapbox API’s and SDK’s which allowed me 
+            to learn how to manipulate the data displayed on the map using JavaScript and style the way the information on the map appeared using CSS.</p>
+   
+    </section>
+
+    <section>
+        <h3>Map Creation </h3>
+        <p>The first step in developing Fitness in the City was creating a custom map using Mapbox Studio. I wanted the style of Fitness in the City 
+            to match the style of the rest of the website so that the user experienced it as an integrated part of the website rather than a separate 
+            entity which was loosely linked to the website. To achieve this, I used the same colour scheme of Black, White and Dodgerblue. The map’s 
+            background was made black, the text and icons were made white and the roads where made dodgerblue. The base map provided by Mapbox Studio 
+            has a lot of built-in content which makes the map rather overwhelming. The website however has a relatively minimalistic finish without too 
+            much clutter or unnecessary elements. In order to further solidify the visual link between the main website and the Fitness in the City page, 
+            I further manipulated some of the built-in components of Mapbox. First, I reduced the size of area and road names, I also changed the opacity 
+            of the labels for settlement-subdivisions to be zero, leaving only the names of main areas visible. I also removed the text effects on the Point 
+            of Interest labels to simplify their look. Lastly, I removed any unnecessary administrative boundary and transit labels. The final product was a 
+            Map Style which matched the website’s style and was no longer overwhelming. </p>
+
+    </section>
+
+    <section>
+        <h3>Incorporating Map  </h3>
+        <p>Once the map style was created, I needed to link the map with the HTML page featured on the website. This was done by first importing the Mapbox 
+            API and default style and then creating the map using JavaScript linked to a div HTML element which serves as the container for the map. 
+            The map’s parameters also needed to be manipulated to ensure that Johannesburg was the center of the map and that the default zoom level allowed 
+            the user to see the whole of Johannesburg as well as its surrounding areas. I also needed to set the bounds of the map so that the user’s ability 
+            to pan was restricted to a certain area. </p>
+ </section>
+
+    <section>
+        <h3>Populating Map </h3>
+        <p>With the map created, I now had to add the actual content for the platform. The content would be added as layers of different icons which the user 
+            could click, causing a pop-up to appear containing an image and hyperlink to a website containing more information about the location or event. 
+            A source was created to store each collection’s information (Events, Restaurants, Runs and Gyms). Each of these collections stored a number of 
+            features which would be the individual elements the map contained. Each feature stored the HTML code necessary to create the pop-up, the icon that 
+            would appear on the map as well as the co-ordinates of where on the map the icon would appear. </p>
+        
+        <p>A layer was then created for each corresponding source, the layout parameters of the layer allowed for the icon size and image to be set, the Maki
+             Icon pack was used for the different icons. A function that would be called when an icon on the respective layer was clicked was then created, this 
+             function would convert the coordinates provided in the source to the lngLat format used by Mapbox and then create a popup, within a predefined offset, 
+             above the given coordinates using the given HTML to determine its content. </p>
+        
+        <p>Functions that would be called when the mouse entered and exited the different icons were also added to turn the default hand into a pointer when 
+            hovering over an icon. To give the user the ability to toggle which layers were visible and which were hidden, a variable which stored each of 
+            the Layer’s ID’s was created. A loop would then iterate through each layer ID and create an HTML link element. When this link element was clicked, 
+            a new variable would store the link’s corresponding Layer ID. A conditional statement would then check if the layer was already hidden and if it was, 
+            would show it and add “active” to the layer’s class names. If the layer was already being shown, clicking the link would hide it , clear all its 
+            corresponding icons, and clear its class names. Finally, a control which allows the user to see their location on the map, given that they fall 
+            within the bounds, as well as onscreen navigation controls, were added to the map. All of this code was nested in a function which would be called 
+            when the pages was loaded.</p>
+    </section>
+
+    <section>
+        <h3>Styling</h3>
+        <p>As mentioned above, Mapbox allows for its components to be styled using CSS. Which meant the font and color scheme used for the rest of the website 
+            could also be incorporated into the popups and the links which toggle the layers. Adding a header to the page which matched the header used on the 
+            website also allowed for further visual integration of the Fitness in the City page with the website. Further CSS code was also added to ensure this 
+            header would be responsive and that the pop-ups would rescale themselves once a certain screen width was reached.</p>
+    </section>
+
+    <section>
+        <h3>Conclusion</h3>
+        <p>The Fitness in the City platform currently only features a limited amount of locations and events for each category but once launched and as the 
+            platform grew, new locations and events could be added. If there is one thing writing my blogs on Information Geography and the Localness of Google 
+            Search Results taught me it is that there is a great deal of importance placed on the digital representations of places meaning the ability to feature 
+            new places and events on the platform could even create a new business initiative for Kent in which companies pay him to be featured on the platform. </p>
+    </section>
+
+    <button onclick="window.location.href='revolution.html'" class = "blogBut">Previous Blog Post</button>
+    <button onclick="topFunction()" id="topButton" class="blogBut">Back To Top</button>
+    
+
+
+
+</article>
+
+    
+</body>
+</html>

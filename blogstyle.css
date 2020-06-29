@@ -85,6 +85,10 @@ h3{
     background-image: url("Images/revolution-min.webp");
 }
 
+.fitness{
+    background-image: url("Images/fitness-min.webp");
+}
+
 .holder{
     background-color: hsla(0, 0%, 0%, 0.5);
     width: 50%;
