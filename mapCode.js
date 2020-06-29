@@ -3,20 +3,21 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiYmlnYmFkYnJlbnQiLCJhIjoiY2ticm43MzhtMXpzdDJ4cG8xZjhoOWpsbyJ9.iXmGLDcFNZkcoqvpbBt0iw';
 
 var bounds = [
-   [27.4, -26.7], // Southwest coordinates 27.934, -26.316
-    [28.7, -25.65] // Northeast coordinates
+   [27.4, -26.7], 
+    [28.7, -25.65]
   ];
 
 
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/bigbadbrent/ckbrpdlmr0ddi1imroqf2m57j/draft',
+    style: 'mapbox://styles/bigbadbrent/ckbrpdlmr0ddi1imroqf2m57j',
     center: [28.0473, -26.2],
     zoom: 10,
     minZoom: 10.5,
     maxZoom: 14,
     dragRotate: false,
-    maxBounds: bounds
+    maxBounds: bounds, 
+    logoPosition: 'top-right'
 });
 
 map.on('load', function() {
@@ -470,7 +471,7 @@ map.on('load', function() {
             .setLngLat(coordinates)
             .setHTML(description)
             .addTo(map);
-            //.addClassName("popup");
+            
           
     });
 
@@ -488,7 +489,7 @@ map.on('load', function() {
             .setLngLat(coordinates)
             .setHTML(description)
             .addTo(map)
-            //.addClassName("popup");
+            
           
     });
 
@@ -505,7 +506,7 @@ map.on('load', function() {
             .setLngLat(coordinates)
             .setHTML(description)
             .addTo(map)
-            //.addClassName("popup");
+            
           
     });
 
@@ -523,7 +524,7 @@ map.on('load', function() {
             .setLngLat(coordinates)
             .setHTML(description)
             .addTo(map)
-            //.addClassName("popup");
+          
           
     });
 
@@ -574,24 +575,24 @@ map.on('load', function() {
         link.textContent = id;
          
         link.onclick = function(e) {
-        var clickedLayer = this.textContent;
-        e.preventDefault();
-        e.stopPropagation();
+            var clickedLayer = this.textContent;
+            e.preventDefault();
+            e.stopPropagation();
          
-        var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
-         
-        
-        if (visibility === 'visible') {
-        map.setLayoutProperty(clickedLayer, 'visibility', 'none');
-        this.className = '';
-        } else {
-        this.className = 'active';
-        map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
-        }
+            var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
+            
+            
+            if (visibility === 'visible') {
+                map.setLayoutProperty(clickedLayer, 'visibility', 'none');
+                this.className = '';
+            } else {
+                this.className = 'active';
+                map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+                }
         };
          
         var layers = document.getElementById('menu');
-        layers.appendChild(link);
+         layers.appendChild(link);
         }
 });
 
@@ -605,3 +606,4 @@ map.addControl(
     );
 
     map.addControl(new mapboxgl.NavigationControl());
+

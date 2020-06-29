@@ -1,13 +1,12 @@
 
 
-//CLIENT TESTIMONIALS
+
 const slides = document.querySelector(".slider").children; 
 const indicatorImages = document.querySelector(".slider-indicator").children;
 
 
 for (let i = 0; i < indicatorImages.length; i++) {
   indicatorImages[i].addEventListener("click", function(){
-   // console.log(this.getAttribute("data-id"))
     for(let j=0; j<indicatorImages.length;j++){
       indicatorImages[j].classList.remove("active");
     }
@@ -21,8 +20,6 @@ for (let i = 0; i < indicatorImages.length; i++) {
   
 }
 
-
-//Clear input fields
 
 const clearButton = document.querySelector(".reset");
 clearButton.addEventListener("click",function(){

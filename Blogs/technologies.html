@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <script src="../script.js"></script>
+    <script type="module" src="blogheader.js"></script>
     <script src="../blogHouse.js" async></script>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../blogstyle.css">
@@ -16,35 +17,24 @@
 
 <body class="tech">
     
-    <header class = "container">
-        <h1 class = "brand-name">development blogs</h1>
-        <div class = "homeLink">
-            <i class="fa fa-home"></i>
-        </div>
-        <nav class = "navbar"> 
-            <ul>
-                <li><a href="/WSOA3028A_1827655/index.html">Return to website</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header></header>
 
-    <h1 class= "heading">TECHNOLOGIES BEHIND WORLD WIDE WEB</h1>
+    <h1 class= "heading">Technologies behind the world wide web</h1>
 <article class = "holder">
 
 
     <section>
-        <h3>Semantic Markup - What is it and Why is it necessary</h3>
-        <p >Semantic mark-up is a way of structuring HTML code to ensure things are being used in the way 
+        <h3>Semantic Markup</h3>
+        <p >Semantic markup is a way of structuring HTML code to ensure elements are being used in the way 
             that they were intended to be used. While this may sound redundant it is incredibly important 
             when looking at web development because while two web pages may look similar, the way in which 
             the HTML code that controls the website has been put together can vary and these variations can 
-            cause issues in the way that the website is accessed by different people. Not only people though, 
-            when Web Robots crawl through the website to analyse what the site contains, semantic mark-up dictates 
-            whether or not these Bots acquire and relay the correct information.</p>
+            cause issues in the way that the website is accessed by different people and the 
+            Web Robots which crawl through the website to analyse what the site contains.</p>
     </section>
 
     <section>
-        <h3>What is a browser? How do they work?</h3>
+        <h3>Browsers</h3>
         <p>A browser is a software application that acts as a client in a client-server model with the Web acting as the server.
          The browser requests some sort of information from the Web server and the server sends this information back to the browser 
          where it is displayed on the computer. Through this process browsers are able to retrieve Web Pages, images, video and many 
@@ -52,15 +42,15 @@
     </section>
 
     <section>
-        <h3>What are URLs and how do they work?</h3>
+        <h3>URLS</h3>
         <p>Universal Resource Locator (URL) is the text that a user types into their browser in order to reach a webpage. Webpages 
             themselves are found using an Internet Protocol (IP) address which is a series of numbers. These series of numbers are 
             often long and complicated and would be impossible to remember so instead we use URL’s which our browser translates into 
-            the IP for us using a Domain Name Server (DNS). That IP is then used to bring the user to their destination.</p>
+            the IP using a Domain Name Server (DNS). That IP is then used to bring the user to their destination.</p>
     </section>
 
     <section>
-        <h3>A reflection on McLuhan, M. ‘The Medium is the Message’</h3>
+        <h3>McLuhan, M. ‘The Medium is the Message’</h3>
         <p>  McLuhan’s philosophy of “The Medium is the Message” has sparked many debates over the years. It essentially explains 
             that the medium a message is delivered through has a more profound effect on society than the message itself. At face 
             value this is a rather difficult thing to understand but once you start looking at examples the explanation becomes 
@@ -70,14 +60,14 @@
             Although McLuhan died in 1980 and would never have seen the Internet we have today, it’s interesting to apply his 
             ideology to newer technologies to analyse how these technologies have shaped the way that we think. Looking at mobile 
             devices and social media, it is clear to see that this has completely shifted the way we interact with one another 
-            socially more the content on the various social medias themselves ever could. And how having so much information available 
+            socially more than the content on the various social medias themselves ever could. Having so much information available 
             at our fingertips has changed the way and speed at which we learn. Scholars around the world can write entire research papers 
             by only having to access the internet instead of having to go to a physical library.</p>
     </section>
 
     <section>
-        <h3>  A reflection on Wardrip-Fruin, N. ‘What Hypertext Is’ </h3>
-        <p>What Hypertext Is gives us unique insight into how various respected scholars define what hypertext is and then goes 
+        <h3>Wardrip-Fruin, N. ‘What Hypertext Is’ </h3>
+        <p>"What Hypertext Is" gives us unique insight into how various respected scholars define what hypertext is and then goes 
             on to explore what it was originally intended to be when it was defined by Theodor Holm Nelson, in its early stages of 
             development. Nelson initially defines hypertext as a body of written or pictorial material interconnect in a way that 
             could not be presented on paper, allowing some sort of exclusivity and advantage to those using the web, an experience 
@@ -87,9 +77,9 @@
             professionals. </p>
     </section>
 
-    <button onclick="window.location.href='weavingtheweb.html'" class = "blogBut">Previous Blog Post</button>
+    <a href='weavingtheweb.html' class = "blogBut">Previous Blog Post</a>
     <button onclick="topFunction()" id="topButton" class="blogBut">Back To Top</button>
-    <button onclick="window.location.href='oneweb.html'" class = "blogBut">Next Blog Post</button>
+    <a href='oneweb.html' class = "blogBut">Next Blog Post</a>
 
 </article>
 

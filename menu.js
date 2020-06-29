@@ -13,7 +13,6 @@ const socialLinks = [
     {href:"1", class:"fa fa-facebook"},
     {href:"2", class:"fa fa-twitter"},
     {href:"3", class:"fa fa-instagram"}
-    // {href:"4", class:"fa fa-linkedin"}
 ]
 
 

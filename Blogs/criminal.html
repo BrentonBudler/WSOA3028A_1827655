@@ -9,7 +9,7 @@
     <script src="../BackToTop.js" async></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name = "description" content = "A blog post containing a close reading of Criminal Machine learning by Bergstrom and West">
+    <meta name = "description" content = "A blog post containing a close reading of Criminal Machine Learning by Bergstrom and West">
     <meta name ="keywords" content = "Blog, Artificial Intelligence, Machine Learning, Criminality">
     <meta name = "author" content = "1827655">
     <title>Criminal Machine Learning</title>
@@ -17,89 +17,85 @@
 
 <body class="crime">
 
-    
-<header></header>
-
+    <header></header>
 
     <h1 class= "heading">Criminal Machine Learning</h1>
-    
-<article class = "holder">
-    <section>
-        <h3>Introduction</h3>
-        <p>In the previous 
-            <a href="tweet.html" style="color:white">blog post</a>
-            , we explored how Joseph Redmon had abandoned his research into Computer Vision for due to ethical concerns,
-             one of which includes the possibility of inaccurate face detection which could result in wrongful identification or criminalisation. 
-             This blog post is a close reading of the case study Criminal Machine learning by Bergstrom and West which critically analyses the work 
-             of Xialoin Wu and Xi Zhang in their article 
-             <a href="https://arxiv.org/pdf/1611.04135v1.pdf" style="color:white">“Automated Inference on Criminality using Face Images.”</a>
+        
+    <article class = "holder">
+        <section>
+            <h3>Introduction</h3>
+            <p>In the previous 
+                <a href="tweet.html" style="color:white">blog post</a>
+                , we explored how Joseph Redmon had abandoned his research into Computer Vision for due to ethical concerns,
+                one of which includes the possibility of inaccurate face detection which could result in wrongful identification or criminalisation. 
+                This blog post is a close reading of the case study "Criminal Machine Learning" by Bergstrom and West which critically analyses the work 
+                of Xialoin Wu and Xi Zhang in their article 
+                <a href="https://arxiv.org/pdf/1611.04135v1.pdf" style="color:white">“Automated Inference on Criminality using Face Images.”</a>
             </p>
 
         </section>
 
-    <section>
-        <h3>History</h3>
-        <p> Wu and Zhangs work is largely influenced by the work of Cesare Lombroso’s physiognomic criminology. Lombroso was a 19th century Italian doctor  
-            who studied the anatomy of hundreds of criminals. He believed that certain physical features contained important clues about a man’s moral 
-            composition, none of which turned out to have any sound scientific basis. In November of 2016, Wu and Zhang published an article in which they 
-            claim to have developed a machine learning algorithm which can distinguish criminals from non-criminals with nearly 90% accuracy, which is free 
-            from the biases and prejudices that cloud human judgement. 
-        </p>
+        <section>
+            <h3>History</h3>
+            <p> Wu and Zhangs work is largely influenced by the work of Cesare Lombroso’s physiognomic criminology. Lombroso was a 19th century Italian doctor  
+                who studied the anatomy of hundreds of criminals. He believed that certain physical features contained important clues about a man’s moral 
+                composition, none of which turned out to have any sound scientific basis. In November of 2016, Wu and Zhang published an article in which they 
+                claim to have developed a machine learning algorithm which can distinguish criminals from non-criminals with nearly 90% accuracy, which is free 
+                from the biases and prejudices that cloud human judgement. 
+            </p>
 
         </section>
 
-    <section>
-        <h3>Bergstrom and West’s Analyses</h3>
-        <p>In short, Bergstrom and West believe Wu and Zhang’s work is absolute “bullshit”. They support their claims by identifying a major flaw in Wu and 
-            Zhang’s research approach. They explain that a “machine learning algorithm can only be as good, and only as unbiased, as the training data that 
-            we provide to it” . They believe that the training data for Wu an Zhangs algorithm was widely biased as the images used for non-criminals were 
-            images chosen for promotional purposes picked to convey a positive impression of the subject whilst the images used for the criminals were ID 
-            photographs without the aim of casting the individual in a favourable light. </p>
+        <section>
+            <h3>Bergstrom and West’s Analyses</h3>
+            <p>In short, Bergstrom and West believe Wu and Zhang’s work is absolute “bullshit”. They support their claims by identifying a major flaw in Wu and 
+                Zhang’s research approach. They explain that a “machine learning algorithm can only be as good, and only as unbiased, as the training data that 
+                we provide to it” . They believe that the training data for Wu an Zhangs algorithm was widely biased as the images used for non-criminals were 
+                images chosen for promotional purposes picked to convey a positive impression of the subject whilst the images used for the criminals were ID 
+                photographs without the aim of casting the individual in a favourable light. </p>
 
-        <p>They believe that this bias is further exaggerated by the fact the images used for the criminals were all of convicted criminals meaning the 
-            machine algorithm might just be accurate at detecting an individual who has been convicted not necessarily correlated with actually committing a crime.</p>
+            <p>They believe that this bias is further exaggerated by the fact that the images used for the criminals were all of convicted criminals meaning the 
+                machine algorithm might just be accurate at detecting an individual who has been convicted not necessarily correlated with actually committing a crime.</p>
         </section>
 
-    <section>
-        <h3> Bergstrom and West’s Interpretation </h3>
-        <p> Further evaluation of Wu and Zhang’s methodology lead Bergstrom and West to deduce that the algorithm being used is differentiating criminals 
-            and non-criminals by their facial expressions rather than their facial features. The criminals in the data set are all frowning or scowling whilst 
-            the non-criminals are faintly smiling. Implying that the conclusions are being drawn from situation-dependent expressions rather than immutable 
-            aspects of facial structure. They admit that due to lack of access to the entire data set used, they are unable to adequately evaluate their 
-            interpretation but that the information provided in the Wu and Zhang’s paper strongly suggests they are correct. They claim there is no need 
-            for us to worry about the ethical concerns of detecting pre-crime just yet.</p>
+        <section>
+            <h3> Bergstrom and West’s Interpretation </h3>
+            <p> Further evaluation of Wu and Zhang’s methodology lead Bergstrom and West to deduce that the algorithm being used is differentiating criminals 
+                and non-criminals by their facial expressions rather than their facial features. The criminals in the data set are all frowning or scowling whilst 
+                the non-criminals are faintly smiling. Implying that the conclusions are being drawn from situation-dependent expressions rather than immutable 
+                aspects of facial structure. They admit that due to lack of access to the entire data set used, they are unable to adequately evaluate their 
+                interpretation but that the information provided in the Wu and Zhang’s paper strongly suggests they are correct. They claim there is no need 
+                for us to worry about the ethical concerns of detecting pre-crime just yet.</p>
 
         </section>
 
-    <section>
-        <h3>Wu and Zhang’s Response</h3>
-        <p>Wu and Zhang responded to Bergstrom and West’s case studying in the form of detailed letter. In this letter they dispel Bergstrom and Wests claims 
-            about the data set being bias by explaining that the machine learning method they used was developed to ignore superficial differences between images 
-            such as compression and different cameras. They explain that they did make their best efforts to validate their findings. Whilst their rebuttal of Bergstrom 
-            and West’s claims is rather feeble, they do note that their research was done to improve the progress being made into automated face recognition from the 
-            sociopsychological dimension and they are more interested in teaching a machine creating impressions of a stranger. They explain that criminality was just 
-            chosen as an easy test case to validate a correlation between the innate traits and social behaviours of a person and the physical characteristics of that person’s face.</p>
-    </section>
+        <section>
+            <h3>Wu and Zhang’s Response</h3>
+            <p>Wu and Zhang responded to Bergstrom and West’s case studying in the form of detailed letter. In this letter they dispel Bergstrom and West's claims 
+                about the data set being bias by explaining that the machine learning method they used was developed to ignore superficial differences between images 
+                such as compression and different cameras. They explain that they did make their best efforts to validate their findings. Whilst their rebuttal of Bergstrom 
+                and West’s claims is rather feeble, they do note that their research was done to improve the progress being made into automated face recognition from the 
+                sociopsychological dimension and they are more interested in teaching a machine to create impressions of a stranger. They explain that criminality was just 
+                chosen as an easy test case to validate a correlation between the innate traits and social behaviours of a person and the physical characteristics of that person’s face.</p>
+        </section>
 
-    <section>
-        <h3>Reflection</h3>
-        <p>When it comes to face-induced social inference, I tend  to agree with Bergstrom and West. Modern research has proven, and continues to prove, that our facial features 
-            are determined by genes we inherit from previous generations and that these features are determined by 
-            <a href="https://www.inverse.com/article/40015-genes-facial-features-3-d-maping" style="color:white">biological physical DNA </a>
-            and not by our personality traits. I do, however, believe that there are several improvements Wu and Zhang could make to their experiment if they wanted it to 
-            receive less criticism. Firstly, the images they used would have to be taken in the same conditions, in other words the instructions given to each subject should
-            be the same, something along the lines of “relax all of your facial muscles, try not to show any expression.” Secondly, the data set they use needs to be larger 
-            and more diverse. Their article explains that they used 1800 photos of exclusively Chinese Men between the ages of 18-55. In order to solidify their conclusions 
-            their data set would have to include people from all around the world of different ages and genders. It might not be realistic to create or gather the data set truly 
-            required to prove their claims, but putting effort into acquiring this data set and drawing sound conclusions is better than making extraordinary claims and backing them with weak data. </p>
-    </section>
+        <section>
+            <h3>Reflection</h3>
+            <p>When it comes to face-induced social inference, I tend  to agree with Bergstrom and West. Modern research has proven, and continues to prove, that our facial features 
+                are determined by genes we inherit from previous generations and that these features are determined by 
+                <a href="https://www.inverse.com/article/40015-genes-facial-features-3-d-maping" style="color:white">biological physical DNA </a>
+                and not by our personality traits. I do, however, believe that there are several improvements Wu and Zhang could make to their experiment if they wanted it to 
+                receive less criticism. Firstly, the images they used would have to be taken in the same conditions, in other words the instructions given to each subject should
+                be the same, something along the lines of “relax all of your facial muscles, try not to show any expression.” Secondly, the data set they use needs to be larger 
+                and more diverse. Their article explains that they used 1800 photos of exclusively Chinese Men between the ages of 18-55. In order to solidify their conclusions 
+                their data set would have to include people from all around the world of different ages and genders. It might not be realistic to create or gather the data set truly 
+                required to prove their claims, but putting effort into acquiring this data set and drawing sound conclusions would be better than making extraordinary claims and backing them with weak data. </p>
+        </section>
 
-    <button onclick="window.location.href='tweet.html'" class = "blogBut">Previous Blog Post</button>
-    <button onclick="topFunction()" id="topButton" class="blogBut">Back To Top</button>
-    <button onclick="window.location.href='race.html'" class = "blogBut">Next Blog Post</button>
-
-
-</article>
+        <a href="tweet.html" class="blogBut">Previous Blog Post</a>
+        <button onclick="topFunction()" id="topButton" class="blogBut">Back To Top</button>
+        <a href="race.html" class="blogBut">Next Blog Post</a>
+    </article>
 
     
 </body>

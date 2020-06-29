@@ -2,8 +2,6 @@ const menuItems = [
     {title: 'Return to Website', link: '/WSOA3028A_1827655/index.html'}
 ]
 
-
-
 const initializeMenu = () => {
 
     const header = document.querySelector('header');

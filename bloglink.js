@@ -1,6 +1,4 @@
 
-
-
 const Blogs = [
     {title: '.impressions', link: 'Blogs/impressions.html'},
     {title: '.weaving', link: 'Blogs/weavingtheweb.html'}, 
@@ -15,7 +13,8 @@ const Blogs = [
     {title: '.crime', link: 'Blogs/criminal.html'},
     {title: '.race', link: 'Blogs/race.html'},
     {title: '.hegemonies', link: 'Blogs/digitalhegemonies.html'},
-    {title: '.revolution', link: 'Blogs/revolution.html'}
+    {title: '.revolution', link: 'Blogs/revolution.html'},
+    {title: '.fitness', link: 'Blogs/fitnessinthecity.html'}
 
 ]
 
