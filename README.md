@@ -1,2 +1,2 @@
-# WSOA3028A_1827655
-Read Me File for auxillary information about the website and its development
+# Web Development Project
+This is a website I developed for a University Project. It is a portfolio website for Kent Wilson, a fictitious peronal trainer.
